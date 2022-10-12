@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Раздел 1: Web Core</title>
+</head>
+<body>
+    <aside class="menu">
+        <ul class="menu__site-nav">
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.1: Git</a>
+            </li>
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.2: Основы CSS/HTML</a>
+            </li>
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.3: Построение сеток + БЭМ именование</a>
+            </li>
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.4: Продвинутая стилизация</a>
+            </li>
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.5: JavaScript в браузере</a>
+            </li>
+            <li class="site-nav__item">
+                <a href="" class="site-nav__link">Блок 1.6: Настройки окружения</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link crumbs-nav__link--active">Раздел 1: Web Core</a>
+                </li>
+            </ul>
+        </header>
+        <article class="article">
+            <h1 class="article__title">Раздел 1: Web Core</h1>
+            <h2 class="article__subtitle">Основные материалы к использованию</h2>
+            <ul class="article__list">
+                <li class="article__item">
+                    <a href="https://developer.mozilla.org/ru/" class="article__link" target="_blank">Документация HTML/CSS/JS - самое свежее и актуальное</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://learn.javascript.ru/" class="article__link" target="_blank">Учебник по JS - учебник Кантора</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://caniuse.com/" class="article__link" target="_blank">Совместимость браузеров с функционалом HTML/CSS/DOM API</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://webref.ru/" class="article__link" target="_blank">WebReference - хороший справочник HTML/CSS, но не учебник</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://gist.github.com/didolf/48f51b2f891aceff35048334eb3a96c8" class="article__link" target="_blank">(опционально) Вместо Github Pages можно использовать сервис now: настройка</a>
+                </li>
+            </ul>
+            <p class="article__text">Простейшая HTML-страница состоит как минимум из трёх тегов: <code class="article__code"><html></code>, <code class="article__code"><head></code> и <code class="article__code"><body></code>. Тег <code class="article__code"><head></code> обычно содержит заголовок, ключевые слова, описание страницы и другие служебные данные. Также внутри него подключаются внешние ресурсы, например, стили. Содержимое этого тега не отображается на странице напрямую. А в теге <code class="article__code"><body></code> хранится содержание страницы, которое отображается в окне браузера.</p>
+            <pre class="article__highlight">
+                <code class="highlight__code"><head>
+                    <link href="адрес_файла_стилей.css" rel="stylesheet">
+                </head></code>
+            </pre>
+        </article>
+        <article class="article">
+            <h2 class="article__subtitle">Дополнительные материалы</h2>
+            <ul class="article__list">
+                <li class="article__item">
+                    <a href="https://developer.mozilla.org/ru/" class="article__link" target="_blank">Документация HTML/CSS/JS - самое свежее и актуальное</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://learn.javascript.ru/" class="article__link" target="_blank">Учебник по JS - учебник Кантора</a>
+                </li>
+                <li class="article__item">
+                    <a href="https://caniuse.com/" class="article__link" target="_blank">Совместимость браузеров с функционалом HTML/CSS/DOM API</a>
+                </li>
+            </ul>
+        </article>
+        <footer class="footer"></footer>
+    </main>
+</body>
+</html>
