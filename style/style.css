@@ -18,8 +18,8 @@ body {
 /*page grid layout*/
 .body-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 326px) auto;
-  grid-template-rows: minmax(70px, 92px) 1fr 1fr;
+  grid-template-columns: minmax(326px, 326px) auto;
+  grid-template-rows: minmax(92px, 92px) 1fr 1fr;
   grid-template-areas:
       "menu header"
       "menu main"
@@ -106,7 +106,7 @@ body {
   left: 32px;
   top: 0;
   background-color: #c9d1d9;
-  height: 93%;
+  height: calc(100% - 16px);
   width: 1px;
   border-radius: 50%;
 }
@@ -125,8 +125,20 @@ body {
 }
 
 .site-nav__drop-link--active {
+  position: relative;
   color: #58a6ff;
   font-weight: 500;
+}
+
+.site-nav__drop-link--active::before {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 0;
+  background-color: #c9d1d9;
+  height: 100%;
+  width: 2px;
+  border-radius: 5px;
 }
 
 .header {
@@ -254,6 +266,13 @@ body {
   display: block;
   border-bottom: 1px solid #30363d;
   padding-bottom: 6px;
+}
+
+.article__anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
 }
 
 .article__list {
