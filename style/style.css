@@ -81,6 +81,10 @@ body {
   background-color: #000;
 }
 
+.site-nav__link--active {
+  background-color: #000;
+}
+
 .site-nav__arrow {
   display: inline-block;
   user-select: none;
