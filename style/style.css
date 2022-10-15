@@ -19,15 +19,13 @@ body {
 .body-grid {
   display: grid;
   grid-template-columns: minmax(326px, 326px) auto;
-  grid-template-rows: minmax(92px, 92px) 1fr 1fr;
+  grid-template-rows: minmax(92px, 92px) 1fr auto;
   grid-template-areas:
       "menu header"
       "menu main"
       "menu footer";
   column-gap: 0px;
   row-gap: 0px;
-  width: 100vw;
-  height: 100vh;
 }
 
 .menu {
@@ -277,7 +275,7 @@ body {
 
 .article__list {
   margin-top: 16px;
-  padding-left: 16px;
+  padding-left: 32px;
 }
 
 .article__item {
@@ -291,6 +289,10 @@ body {
 }
 
 .article__text {
+  margin-top: 16px;
+}
+
+.article__img {
   margin-top: 16px;
 }
 
