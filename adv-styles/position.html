@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>Блок 1.4: Продвинутая стилизация</title>
+</head>
+<body>
+    <div class="body-grid">
+        <aside class="menu">
+            <nav class="menu__site-nav site-nav">
+                <a href="" class="site-nav__return-link return-link">
+                    <svg aria-hidden="true" role="img" class="return-link__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
+                    </svg>Все разделы
+                </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="../git/index.html" class="site-nav__link">1.1: Git
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../basics/index.html" class="site-nav__link">1.2: Основы CSS/HTML
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../grids/index.html" class="site-nav__link">1.3.1: Построение сеток
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../bem/index.html" class="site-nav__link">1.3.2: БЭМ именование
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../adv-styles/index.html" class="site-nav__link site-nav__link--active">1.4: Продвинутая стилизация
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow site-nav__arrow--open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                        <ul class="site-nav__drop-list">
+                            <li class="site-nav__drop-item">
+                                <a href="position.html" class="site-nav__drop-link site-nav__drop-link--active">Позиционирование</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="backgrounds.html" class="site-nav__drop-link">Фоны</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="gradients.html" class="site-nav__drop-link">Градиенты и тени</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="decoration.html" class="site-nav__drop-link">Декоративные эффекты</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="transform.html" class="site-nav__drop-link">Трансформации</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="dynamic.html" class="site-nav__drop-link">Динамические эффекты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../js/index.html" class="site-nav__link">1.5: JavaScript в браузере
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../environment/index.html" class="site-nav__link">1.6: Настройки окружения
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../adv-styles/index.html" class="crumbs-nav__link">1.4: Продвинутая стилизация</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    Позиционирование
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__center-wrapper">
+                <div class="main__grid-wrapper">
+                    <div class="main__topper">
+                        <h1 class="topper__title">Боксовая модель и позиционирование</h1>
+                        <h2 class="topper__subtitle">Знакомимся с боксовой моделью. Учимся управлять потоком документа. Разбираемся с позиционированием и управляем координатами позиционированных элементов.
+                        </h2>
+                    </div>
+                    <aside class="main__aside">
+                        <h2 class="aside__title">В данном конспекте</h2>
+                        <nav class="aside__page-nav">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__item">
+                                    <a href="#Title-1" class="page-nav__link">Блочные боксы</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-2" class="page-nav__link">Строчные боксы</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-3" class="page-nav__link">Стандартная блочная модель</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-4" class="page-nav__link">«Схлопывание» внешних отступов</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-5" class="page-nav__link">«Выпадание» внешних отступов</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-6" class="page-nav__link">Как отцентровать элемент?</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-7" class="page-nav__link">Cвойство box-sizing</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-8" class="page-nav__link">Относительное позиционирование</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-9" class="page-nav__link">Абсолютное позиционирование</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-10" class="page-nav__link">Фиксированное позиционирование</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-11" class="page-nav__link">Липкое позиционирование</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-12" class="page-nav__link">z-index</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main__section">
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Блочные боксы</h2>
+                            <p class="article__text">
+                                Каждому HTML-элементу на странице соответствует прямоугольная область. Такие области называются боксами. Самые распространённые типы боксов — блочные и строчные.
+                            </p>
+                            <p class="article__text">
+                                Блочный бокс — это крупная неразрывная прямоугольная область на странице. По умолчанию блочным боксом обладают крупные поточные элементы:
+                            </p>
+                            <img src="sources/block-boxes.svg" alt="Блочный бокс" class="article__img">
+                            <p class="article__text">
+                                Блочные боксы имеют следующие особенности:
+                            </p>
+                            <ol class="article__list">
+                                <li class="article__item">До и после блочного бокса существует перенос строки.</li>
+                                <li class="article__item">Для блочных боксов можно задавать ширину, высоту, внутренние и внешние отступы.</li>
+                                <li class="article__item">Занимают всё доступное пространство по горизонтали.</li>
+                            </ol>
+                            <p class="article__text">
+                                Блочными боксами по умолчанию обладают такие теги как: <code class="article__code">&lt;p&gt;</code>, <code class="article__code">&lt;h1&gt;</code>, <code class="article__code">&lt;h2&gt;</code>, <code class="article__code">&lt;ul&gt;</code> и так далее.
+                            </p>
+                            <p class="article__text">
+                                Ещё один важный тег с блочным боксом — это тег <code class="article__code">&lt;div&gt;</code>, который обозначает просто «блок» или «прямоугольный контейнер». Этот тег чаще всего используется для создания сеток.
+                            </p>
+                            <p class="article__text">
+                                Существуют и более сложные типы боксов, им будет посвящен второй блок части.
+                            </p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Строчные боксы</h2>
+                            <p class="article__text">
+                                Строчные боксы — противоположность блочных. Строчные боксы располагаются друг за другом в одной строке, могут разрываться и находиться на нескольких строках:
+                            </p>
+                            <img src="sources/inline-boxes.svg" alt="Строчный бокс" class="article__img">
+                            <p class="article__text">
+                                Особенности строчных боксов:
+                            </p>
+                            <ol class="article__list">
+                                <li class="article__item">До и после строчного бокса отсутствуют переносы строки.</li>
+                                <li class="article__item">Ширина и высота строчного бокса зависит только от его содержания, задать размеры с помощью CSS нельзя.</li>
+                                <li class="article__item">Можно задавать только горизонтальные отступы.</li>
+                            </ol>
+                            <p class="article__text">
+                                Теги со строчным боксом по умолчанию: <code class="article__code">&lt;a&gt;</code>, <code class="article__code">&lt;strong&gt;</code>, <code class="article__code">&lt;em&gt;</code>, <code class="article__code">&lt;span&gt;</code> и так далее.
+                            </p>
+                            <p class="article__text">
+                                Эти теги предназначены для оформления текста на уровне небольших фраз и отдельных слов.
+                            </p>
+                            <p class="article__text">
+                                А теги с блочным боксом, напротив, предназначены для разметки крупных блоков текста (заголовки, абзацы, списки) и создания сетки.
+                            </p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Стандартная блочная модель</h2>
+                                <p class="article__text">
+                                    Стандартная блочная модель отвечает на основной вопрос:
+                                </p>
+                                <p class="article__text">
+                                    Сколько же в итоге места будет занимать бокс?
+                                </p>
+                                <p class="article__text">
+                                    Ответ следующий:
+                                </p>
+                                <p class="article__highlight">Область, занимаемая блочным боксом, складывается из его ширины и высоты содержания, внутренних и внешних отступов, ширины рамок.</p>
+                                <p class="article__text">
+                                    Для строчных боксов есть свои особенности, которые мы опишем позже.
+                                </p>
+                                <p class="article__text">
+                                    Схема блочной модели:
+                                </p>
+                                <img src="sources/standard-model.svg" alt="Стандартная блочная модель" class="article__img">
+                                <ul class="article__list">
+                                    <li class="article__item">ширина/высота содержания — свойства <code class="article__code">width</code> и <code class="article__code">height</code> (синий прямоугольник на схеме);</li>
+                                    <li class="article__item">внутренние отступы — свойство <code class="article__code">padding</code>;</li>
+                                    <li class="article__item">рамки — свойство <code class="article__code">border</code>;</li>
+                                    <li class="article__item">внешние отступы — свойство <code class="article__code">margin</code>.</li>
+                                </ol>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>«Схлопывание» внешних отступов</h2>
+                                <p class="article__text">Во втором блоке части разберём некоторые важные тонкости блочной модели. И начнём с внешних отступов (margin).</p>
+                                <p class="article__text"><em>Вертикальный отступ</em> между двумя соседними элементами равен максимальному отступу между ними. Если отступ одного элемента равен <code class="article__code">50px</code>, а второго <code class="article__code">30px</code>, то отступ между ними будет <code class="article__code">50px</code>:</p>
+                                <img src="sources/margin-collapse.svg" alt="«Схлопывание» внешних отступов" class="article__img">
+                                <p class="article__text">Этот эффект называется эффектом «схлопывания» внешних отступов.</p>
+                                <p class="article__text">Горизонтальные отступы между элементами просто складываются. Например, горизонтальный отступ между двумя элементами с отступами 30px будет равен <code class="article__code">60px</code>.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>«Выпадание» внешних отступов</h2>
+                                <p class="article__text">«Выпадание» — это ещё один эффект, связанный с вертикальными внешними отступами.</p>
+                                <p class="article__text">Если внутри родительского блока расположить блок и задать ему отступ сверху, то внутренний блок прижмётся к верхнему краю родительского, а у родительского элемента появится отступ сверху. То есть верхний отступ внутреннего элемента «выпадает» из родительского элемента:</p>
+                                <img src="sources/margin-drop-1.svg" alt="" class="article__img">
+                                <p class="article__text">Если у родительского элемента тоже был задан внешний отступ, то выберется максимальный отступ между собственным и «выпавшим».</p>
+                                <p class="article__text">Чтобы избавиться от эффекта выпадания, можно задать родительскому элементу внутренний отступ (паддинг) сверху или добавить рамку сверху:</p>
+                                <img src="sources/margin-drop-2.svg" alt="" class="article__img">
+                                <p class="article__text">Внешние и внутренние отступы всегда складываются.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>Как отцентровать элемент?</h2>
+                                <p class="article__text">Чтобы отцентровать блочный элемент, нужно выполнить следующие действия:</p>
+                                <ol class="article__list">
+                                    <li class="article__item">Задать элементу ширину, которая меньше ширины родительского контейнера.</li>
+                                    <li class="article__item">Задать для внешних отступов справа и слева значение <code class="article__code">auto</code>.</li>
+                                </ol>
+                                <p class="article__text">Примеры кода:</p>
+                                <pre class="article__highlight">
+<code class="highlight__code">selector {
+  width: 100px;
+  margin: 0 auto;
+}
+
+selector {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}</code>
+                                </pre>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-7"></a>Изменяем блочную модель, свойство box-sizing</h2>
+                                <p class="article__text">Проблему с шириной тянущихся полей решить сложно. Идеальным вариантом было бы изменение алгоритма расчёта ширины элемента, чтобы свойство <code class="article__code">width</code> задавало не ширину содержания, а общую ширину.</p>
+                                <p class="article__text">К счастью, такая возможность в CSS есть. Реализуется она с помощью свойства <br><code class="article__code">box-sizing</code>.</p>
+                                <p class="article__text">Это свойство имеет два значения:</p>
+                                <ol class="article__list">
+                                    <li class="article__item"><code class="article__code">content-box</code> — значение по умолчанию, соответствует стандартной блочной модели.</li>
+                                    <li class="article__item"><code class="article__code">border-box</code> — изменяет режим расчёта ширины элемента на описанный выше: теперь ширина элемента включает и рамку, и внутренние отступы и, собственно, ширину содержания самого элемента.</li>
+                                </ol>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-8"></a>Относительное позиционирование</h2>
+                                <p class="article__text">CSS-свойство <code class="article__code">position</code> задает режим позиционирования элементов. Значением по умолчанию является <code class="article__code">static</code>, которое означает «обычное позиционирование».</p>
+                                <p class="article__text">Значение <code class="article__code">relative</code> обозначает «относительное позиционирование». Относительно спозиционированный элемент можно перемещать относительно его исходного положения.</p>
+                                <p class="article__text">Относительно спозиционированный элемент остается в потоке документа, а при его перемещении наблюдаются интересные эффекты. Для начала просто зададим относительное позиционирование выбранному блоку.</p>
+                                <p class="article__text">Свойства <code class="article__code">top</code>, <code class="article__code">bottom</code>, <code class="article__code">left</code> и <code class="article__code">right</code> позволяют сместить относительно спозиционированный элемент вверх, вниз, влево или вправо относительно его исходного положения. Значения этих свойств обычно задается в пикселях, но можно использовать и другие единицы измерения CSS.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-9"></a>Абсолютное позиционирование</h2>
+                                <p class="article__text">Значение <code class="article__code">absolute</code> свойства <code class="article__code">position</code> задаёт элементу абсолютное позиционирование.</p>
+                                <p class="article__text">Абсолютно спозиционированные элементы обладают следующими особенностями:.</p>
+                                <ol class="article__list">
+                                    <li class="article__item">Выпадают из потока документа. Место, которое они занимали, становится как бы пустым и его занимают соседние элементы.</li>
+                                    <li class="article__item">Ширина по умолчанию зависит от содержимого (а не растягивается на всю доступную ширину).</li>
+                                    <li class="article__item">Остаются на том же месте, где были, если не заданы значения свойств <code class="article__code">top</code>, <code class="article__code">left</code>, <code class="article__code">right</code>, <code class="article__code">bottom</code>.</li>
+                                </ol>
+                                <p class="article__text">Свойства <code class="article__code">top</code>, <code class="article__code">left</code>, <code class="article__code">right</code>, <code class="article__code">bottom</code> по-разному работают для элементов с абсолютным и относительным позиционированием.</p>
+                                <p class="article__text">Если для «относительных» элементов эти свойства задают смещение относительно исходной позиции, то для «абсолютных» элементов они задают расположение относительно некой системы координат, как для точки на графике.</p>
+                                <p class="article__text">По умолчанию такой системой координат является окно браузера, а точки начала координат привязаны к его углам.</p>
+                                <p class="article__text">Свойство <code class="article__code">left</code> задает отступ от левого края окна браузера до левого края абсолютно спозиционированного элемента. Если свойству задать отрицательное значение, то элемент сместится за левый край браузера (при этом полоса прокрутки не появится).</p>
+                                <p class="article__text">Отрицательное значение <code class="article__code">bottom</code> затолкнет элемент за нижний край окна браузера и при этом появится полоса прокрутки.</p>
+                                <p class="article__text">По умолчанию «абсолютные» элементы позиционируются в системе координат, привязанной к окну браузера. Однако, систему координат можно изменить.</p>
+                                <p class="article__text">Если какой-нибудь из родителей «абсолютного» элемента имеет относительное позиционирование, то элемент будет позиционироваться относительно этого родителя. Если среди родителей несколько относительно позиционированных элементов, то «абсолютный» элемент будет позиционироваться относительно ближайшего из них.</p>
+                                <p class="article__text">В этом задании вы увидите, как происходит смена системы координат (и соответственно точек отсчета). Интересно, что позиционирование по умолчанию отличается от позиционирования внутри тега <code class="article__code">body</code>.</p>
+                                <p class="article__text">Неявная точка отсчета — это то место, где находился элемент до того, как ему задали абсолютное позиционирование. Если «абсолютному» элементу не задавать свойства <code class="article__code">left</code> … <code class="article__code">bottom</code>, то он выпадет из потока, но останется на прежнем месте.</p>
+                                <p class="article__text">Кстати, когда значение для <code class="article__code">left</code> не задано, оно равно <code class="article__code">auto</code>. То же верно и для оставшихся трёх свойств. С помощью значения <code class="article__code">auto</code> можно возвращать «абсолютные» элементы на исходное положение.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-10"></a>Фиксированное позиционирование</h2>
+                                <p class="article__text">Значение <code class="article__code">fixed</code> свойства <code class="article__code">position</code> задаёт элементу фиксированное позиционирование.</p>
+                                <p class="article__text">Фиксированное позиционирование похоже на абсолютное, но есть и отличия:</p>
+                                <ol class="article__list">
+                                    <li class="article__item">Фиксированный элемент тоже выпадает из потока.</li>
+                                    <li class="article__item">Фиксированный элемент привязывается к определенной точке в окне браузера и остается на ней всегда, даже при прокрутке страницы.</li>
+                                    <li class="article__item">Фиксированный элемент можно позиционировать с помощью свойств <code class="article__code">top</code>, <code class="article__code">left</code>, <code class="article__code">right</code>, <code class="article__code">bottom</code>, но точка отсчета всегда привязана к окну браузера.</li>
+                                </ol>
+                                <p class="article__text">Можете представить себе фиксированный элемент, как стикер, который наклеен на монитор. Такие элементы часто применяют для создания навигационных панелей, привязанных к верхней или нижней части окна браузера.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-11"></a>Липкое позиционирование</h2>
+                                <p class="article__text">Значение <code class="article__code">sticky</code> свойства <code class="article__code">position</code> задаёт элементу липкое позиционирование.</p>
+                                <p class="article__text">Липкое позиционирование похоже на фиксированное, но есть и отличия:</p>
+                                <ol class="article__list">
+                                    <li class="article__item">Липкий элемент одновременно выпадает и не выпадает из потока.</li>
+                                    <li class="article__item">Липкий элемент тоже привязывается к определенной точке в окне браузера и остается на ней всегда, даже при прокрутке страницы.</li>
+                                    <li class="article__item">Липкий элемент может перемещаться только в пределах контейнера, в котором находится. Если он будет единственным ребёнком,то у него не будет элементов-братьев, поверх которых он может перемещаться.</li>
+                                    <li class="article__item">Липкий элемент можно позиционировать с помощью свойств <code class="article__code">top</code>, <code class="article__code">left</code>, <code class="article__code">right</code>, <code class="article__code">bottom</code>, но точка отсчета всегда привязана к окну браузера.</li>
+                                </ol>
+                                <p class="article__text">«Липкое» позиционирование состоит из двух основных частей: «липкого» элемента и «липкого» контейнера.</p>
+                                <p class="article__text">«Липкий» элемент — это элемент, которому мы задали <code class="article__code">position: sticky</code>. Элемент будет становиться плавающим, как только область видимости достигнет определённой позиции, например <code class="article__code">top: 0px</code>.</p>
+                                <p class="article__text">«Липкий» контейнер — это HTML-элемент, который оборачивает «липкий» элемент. Это максимальная область, в которой может перемещаться наш элемент.</p>
+                                <p class="article__highlight">Когда вы задаёте элементу <code class="highlight__code">position: sticky</code>, его родитель автоматически становится «липким» контейнером!</p>
+                                <p class="article__text">Очень важно это запомнить! Контейнер будет являться областью видимости для элемента. «Липкий» элемент не может выйти за пределы своего «липкого» контейнера.</p>
+                                <p class="article__text">Относительное (или статичное) — «липкий» элемент похож на элемент со статическим или относительным позиционированием поскольку сохраняет свою естественную позицию в DOM (остаётся в потоке).</p>
+                                <p class="article__text">Фиксированное — когда элемент залипает, то ведёт себя как будто у него заданы стили <code class="article__code">position: fixed</code>, остаётся на той же позиции в области видимости и вырывается из потока документа.</p>
+                                <p class="article__text">Абсолютное — в конце доступной для перемещений области элемент останавливается и остаётся поверх другого элемента. Точно также, как ведёт себя абсолютно спозиционированный элемент в контейнере с <code class="article__code">position: relative</code>.</p>
+                            </article>
+                            <article class="article">
+                                <h2 class="article__title"><a class="article__anchor" name="Title-12"></a>z-index или кто кого перекроет</h2>
+                                <p class="article__text">Если в одном месте страницы оказываются несколько «абсолютных» блоков, то они перекрывают друг друга. По умолчанию выше оказывается тот блок, который расположен дальше в коде страницы.</p>
+                                <p class="article__text">C помощью CSS-свойства <code class="article__code">z-index</code> можно управлять тем, как перекрываются блоки. Значением этого свойства может быть целое число. Чем больше <code class="article__code">z-index</code>, тем выше располагается блок.</p>
+                                <p class="article__text">Cвойство <code class="article__code">z-index</code> работает для элементов, у которых <code class="article__code">position</code> задано как <code class="article__code">absolute</code>, <code class="article__code">fixed</code> и <code class="article__code">relative</code>. Таким образом, «относительный» элемент может перекрывать «абсолютный».</p>
+                                <p class="article__text"><code class="article__code">z-index</code> влияет только на соседние элементы в пределах родительского блока.</p>
+                            </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

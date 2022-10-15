@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>Блок 1.4: Продвинутая стилизация</title>
+</head>
+<body>
+    <div class="body-grid">
+        <aside class="menu">
+            <nav class="menu__site-nav site-nav">
+                <a href="" class="site-nav__return-link return-link">
+                    <svg aria-hidden="true" role="img" class="return-link__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
+                    </svg>Все разделы
+                </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="../git/index.html" class="site-nav__link">1.1: Git
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../basics/index.html" class="site-nav__link">1.2: Основы CSS/HTML
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../grids/index.html" class="site-nav__link">1.3.1: Построение сеток
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../bem/index.html" class="site-nav__link">1.3.2: БЭМ именование
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../adv-styles/index.html" class="site-nav__link site-nav__link--active">1.4: Продвинутая стилизация
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow site-nav__arrow--open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                        <ul class="site-nav__drop-list">
+                            <li class="site-nav__drop-item">
+                                <a href="position.html" class="site-nav__drop-link">Позиционирование</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="backgrounds.html" class="site-nav__drop-link site-nav__drop-link--active">Фоны</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="gradients.html" class="site-nav__drop-link">Градиенты и тени</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="decoration.html" class="site-nav__drop-link">Декоративные эффекты</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="transform.html" class="site-nav__drop-link">Трансформации</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="dynamic.html" class="site-nav__drop-link">Динамические эффекты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../js/index.html" class="site-nav__link">1.5: JavaScript в браузере
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../environment/index.html" class="site-nav__link">1.6: Настройки окружения
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../adv-styles/index.html" class="crumbs-nav__link">1.4: Продвинутая стилизация</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    Фоны
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__center-wrapper">
+                <div class="main__grid-wrapper">
+                    <div class="main__topper">
+                        <h1 class="topper__title">Фоны. Знакомство</h1>
+                        <h2 class="topper__subtitle">Научимся использовать фоновые изображения и задавать цвета фона. Разберёмся с популярными форматами изображений и взглянем на некоторые приёмы создания декоративных эффектов.</h2>
+                    </div>
+                    <aside class="main__aside">
+                        <h2 class="aside__title">В данном конспекте</h2>
+                        <nav class="aside__page-nav">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__item">
+                                    <a href="#Title-1" class="page-nav__link">Источники</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-3" class="page-nav__link">Задание</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main__section">
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
