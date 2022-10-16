@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <title>Блок 1.4: Продвинутая стилизация</title>
+    <title>Фоны. Знакомство</title>
 </head>
 <body>
     <div class="body-grid">
@@ -63,9 +63,6 @@
                             </li>
                             <li class="site-nav__drop-item">
                                 <a href="gradients.html" class="site-nav__drop-link">Градиенты и тени</a>
-                            </li>
-                            <li class="site-nav__drop-item">
-                                <a href="decoration.html" class="site-nav__drop-link">Декоративные эффекты</a>
                             </li>
                             <li class="site-nav__drop-item">
                                 <a href="transform.html" class="site-nav__drop-link">Трансформации</a>
@@ -129,23 +126,199 @@
                         <nav class="aside__page-nav">
                             <ul class="page-nav__list">
                                 <li class="page-nav__item">
-                                    <a href="#Title-1" class="page-nav__link">Источники</a>
+                                    <a href="#Title-1" class="page-nav__link">Свойство background</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
+                                    <a href="#Title-2" class="page-nav__link">background-attachment</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-3" class="page-nav__link">Задание</a>
+                                    <a href="#Title-3" class="page-nav__link">background-clip</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                    <a href="#Title-4" class="page-nav__link">background-image</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-5" class="page-nav__link">background-position</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-6" class="page-nav__link">background-repeat</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-7" class="page-nav__link">background-size</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-8" class="page-nav__link">Форматы изображений</a>
                                 </li>
                             </ul>
                         </nav>
                     </aside>
                     <section class="main__section">
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Свойство background</h2>
+                            <p class="article__text">Сокращённое CSS свойство <code class="article__code">background</code> устанавливает сразу все свойства стиля фона, такие как цвет, изображение, источник и размер, или метод повтора.</p>
+                            <p class="article__highlight">Свойство является сокращением, которое устанавливает следующие свойства в одном объявлении: <code class="article__code">background-clip</code>, <code class="article__code">background-color</code>, <code class="article__code">background-image</code>, <code class="article__code">background-origin</code>, <code class="article__code">background-position</code>, <code class="article__code">background-repeat</code>, <code class="article__code">background-size</code>, и <code class="article__code">background-attachment</code>.</p>
+                            <p class="article__text">Как и во всех сокращённых свойствах, любые пропущенные вложенные значения будут установлены в свои изначальные значения.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>background-attachment</h2>
+                            <p class="article__text">Если указано <code class="article__code">background-image</code>, CSS свойство <code class="article__code">background-attachment</code> определяет, является ли позиция этого изображения фиксированной в области просмотра, или прокручивается вместе с содержащим его блоком.</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">fixed</code> - Фон фиксируется относительно области просмотра. Даже если элемент имеет механизм прокрутки, фон не перемещается вместе с элементом. (Это значение несовместимо с <code class="article__code">background-clip: text</code>.)</li>
+                                <li class="article__item"><code class="article__code">local</code> - Фон фиксируется относительно содержимого элемента. Если элемент имеет механизм прокрутки, фон прокручивается с содержимым элемента, и область рисования фона и область позиционирования фона относятся к прокручиваемой области элемента, а не к границе, обрамляющей их.</li>
+                                <li class="article__item"><code class="article__code">scroll</code> - Фон фиксируется относительно самого элемента и не прокручивается с его содержимым. (Он фактически прикреплён к границе элемента.)</li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>background-clip</h2>
+                            <p class="article__text">Свойство CSS <code class="article__code">background-clip</code> определяет как цвет фона или фоновое изображение будут выводиться под границами блока.</p>
+                            <p class="article__text">Если фоновое изображение или цвет не заданы, это свойство будет иметь визуальный эффект, только если у границы есть прозрачные области или частично непрозрачные области (из-за <code class="article__code">border-style</code> или <code class="article__code">border-image</code>); в противном случае граница скрывает разницу.</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">border-box</code> - Фон распространяется до внешнего края границы (но под границей в z-порядке).</li>
+                                <li class="article__item"><code class="article__code">padding-box</code> - Фон распространяется до внешнего края отступа. Под границей фон не рисуется.</li>
+                                <li class="article__item"><code class="article__code">content-box</code> - Фон закрашивается внутри (обрезается) поля содержимого.</li>
+                                <li class="article__item"><code class="article__code">text</code><em>Экспериментальная возможность</em> - Фон закрашивается внутри (обрезается) текста переднего плана.</li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>background-image</h2>
+                            <p class="article__text">Фоновое изображение можно задать с помощью CSS-свойства background-image. Адрес картинки обязательно заключается внутрь url("..."). Например:</p>
+                            <pre class="article__highlight"><code class="highlight__code">selector {
+    background-image: url("адрес-картинки");
+}</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>background-position</h2>
+                            <p class="article__text">CSS свойство <code class="article__code">background-position</code> устанавливает начальную позицию для каждого фонового изображения. Положение относительно уровня положения, установленного <code class="article__code">background-origin</code>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Ключевые значения */
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+
+/* <процент> значения */
+background-position: 25% 75%;
+
+/* <отрезок> значения */
+background-position: 0 0;
+background-position: 1cm 2cm;
+background-position: 10ch 8em;
+
+/* Несколько изображений */
+background-position: 0 0, center;
+
+/* Значения смещения края */
+background-position: bottom 10px right 20px;
+background-position: right 3em bottom 10px;
+background-position: bottom 10px right;
+background-position: top right 10px;
+
+/* Глобальные значения */
+background-position: inherit;
+background-position: initial;
+background-position: unset;</code></pre>
+                            <p class="article__text">Позиция определяет координату x/y, чтобы разместить элемент относительно границ поля элемента. Она может быть определена с использованием одного и двух значений. Если используются два значения, первое значение предоставляет горизонтальную позицию, а второе представляет вертикальную позицию. Если указано только одно, второе значение считается <code class="article__code">center</code>.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>background-repeat</h2>
+                            <p class="article__text">Свойство <code class="article__code">background-repeat</code> устанавливает, как фоновые изображения будет повторяться. Они могут повторяться по горизонтальной и вертикальной оси или не повторяться вовсе.</p>
+                            <p class="article__text">По умолчанию, изображения обрезаются по размеру элемента, но их можно масштабировать (используя <code class="article__code">round</code>) или равномерно растянуть от конца к концу (используя <code class="article__code">space</code>).</p>
+                            <pre class="article__highlight"><code class="highlight__code">/*Ключевые значения*/
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: repeat;
+​​​​​​​background-repeat: space;
+​​​​​​​background-repeat: round;
+​​​​​​​background-repeat: no-repeat;
+                                
+/*Два значения: горизонтальное | вертикальное*/
+background-repeat: repeat space;
+background-repeat: repeat repeat;
+background-repeat: round space;
+background-repeat: no-repeat round;
+
+/* Глобальные значения */
+background-repeat: inherit;
+background-repeat: initial;
+background-repeat: unset;</code></pre>    
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-7"></a>background-size</h2>
+                            <p class="article__text">Значение <code class="article__code">background-size</code> в CSS позволяет задавать размер фонового изображения. Изображение может быть оставлено в исходном размере, растянуто, или подогнано под размеры доступного пространства.</p>
+                            <pre class="article__highlight">
+<code class="highlight__code">/* Ключевые слова */
+background-size: cover;
+background-size: contain;
+
+/* Указано одно значение - ширина изображения, */
+/* высота в таком случае устанавливается в auto */
+background-size: 50%;
+background-size: 3em;
+background-size: 12px;
+background-size: auto;
+
+/* Указаны два значения - */
+/* ширина и высота соответственно */
+background-size: 50% auto;
+background-size: 3em 25%;
+background-size: auto 6px;
+background-size: auto auto;
+
+/* Значения для нескольких фонов */
+/* Не путайте такую запись с background-size: auto auto */
+background-size: auto, auto;
+background-size: 50%, 25%, 25%;
+background-size: 6px, auto, contain;
+
+/* Глобальные значения */
+background-size: inherit;
+background-size: initial;
+background-size: unset;</code>
+                            </pre>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">auto</code> - Значение позволяет изменять размер фонового изображения в соответствии с заданным направлением, сохраняя его пропорции.</li>
+                                <li class="article__item"><code class="article__code">contain</code> - Масштабирует картинку так, чтобы она максимально накрыла собой весь блок. Картинка при этом не обрезается, а вписывается в блок с сохранением пропорций.</li>
+                                <li class="article__item"><code class="article__code">cover</code> - Ключевое слово, обратное contain. Масштабирует изображение как можно больше c сохранением пропорций изображения (изображение не становится сплющенным). Когда изображение и контейнер имеют разные размеры, изображение обрезается либо влево / вправо, либо сверху / снизу.</li>
+                            </ul>
+                            <p class="article__text">Визуализированный размер фонового изображения вычисляется следующим способом:</p>
+                            <p class="article__text">Если оба атрибута в <code class="article__code">background-size</code> заданы и различны от <code class="article__code">auto</code>:</p>
+                            <ul class="article__list">
+                                <li class="article__item">Фоновое изображение отображается в указанном размере</li>
+                            </ul>
+                            <p class="article__text">Если <code class="article__code">background-size</code> содержит <code class="article__code">contain</code> или <code class="article__code">cover</code>:</p>
+                            <ul class="article__list">
+                                <li class="article__item">Изображение визуализируется с сохранением его внутренней пропорции при наибольшем размере, который содержится внутри области размещения фона или покрывает её. Если изображение не имеет внутренней пропорции, оно отображается с размером области расположения фона.</li>
+                            </ul>
+                            <p class="article__text">Если <code class="article__code">background-size</code> установлен как <code class="article__code">auto</code> или <code class="article__code">auto auto</code>:</p>
+                            <ul class="article__list">
+                                <li class="article__item">Если изображение имеет оба внутренних размера, оно отображается с таким размером. Если оно не имеет внутренних размеров и внутренней пропорции, оно отображается с размером области расположения фона. Если оно не имеет размеров, но имеет пропорцию, оно отображается так, если был был бы указан <code class="article__code">contain</code>. Если изображение имеет один внутренний размер и пропорцию, оно отображается с размером, определённым этим одним размером и пропорцией. Если изображение имеет один внутренний размер, но не имеет пропорцию, оно отображается с использованием внутреннего размера и соответствующим размером области позиционирования фона.</li>
+                            </ul>
+                            <p class="article__text">Если <code class="article__code">background-size</code> содержит один атрибут <code class="article__code">auto</code> и один не-<code class="article__code">auto</code>:</p>
+                            <ul class="article__list">
+                                <li class="article__item">Обратите внимание, что изменение размера фона для векторных изображений, в которых отсутствуют внутренние размеры или пропорции, ещё не полностью реализовано во всех браузерах. Будьте осторожны, полагаясь на поведение, описанное выше, и тестируйте в нескольких браузерах (в частности, включая версии Firefox 7 или более ранней версии и Firefox 8 или более поздней версии), чтобы убедиться, что различные визуализации приемлемы.</li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-8"></a>Форматы изображений</h2>
+                            <p class="article__text article__text--divider"><b>Формат JPEG</b></p>
+                            <p class="article__text">Формат JPEG хорошо подходит для фотографий и картин и плохо подходит для схем, чертежей, текста и графики.</p>
+                            <p class="article__text">При сохранении изображения в формат JPEG можно задавать уровень качества. Если установить уровень качества слишком низким, то появятся артефакты.</p>
+                            <p class="article__text">JPEG не поддерживает прозрачность, поэтому изображение в формате JPEG — это всегда прямоугольник. Можно имитировать прозрачность, если в графическом редакторе задать изображению такой же цвет фона, как и у контейнера фотографии.</p>
+                            <p class="article__text">Используйте JPEG для размещения фото с наилучшим соотношением «размер файла»/«качество».</p>
+                            <p class="article__text article__text--divider"><b>Формат PNG</b></p>
+                            <p class="article__text">Формат PNG включает в себя два подтипа: PNG-8 и PNG-24. Они также являются режимами сохранения в Photoshop.</p>
+                            <p class="article__text">PNG-8 по характеристикам схож с форматом GIF. Он хорошо подходит для схем, чертежей, графиков и текста, а также изображений, где мало цветов. Максимальное количество цветов — 256. Данный формат позволяет использовать прозрачность.</p>
+                            <p class="article__text">PNG-24 подходит для схем, чертежей, графиков, текста, а также для сложных многоцветных изображений, так как поддерживает практически неограниченное количество цветов. На фотографиях обычно он уступает JPEG по размеру файла, но превосходит по качеству изображения. Данный формат имеет полноценную поддержку полупрозрачности, которой нет ни в одном другом формате.</p>
+                            <p class="article__text article__text--divider"><b>Формат GIF</b></p>
+                            <p class="article__text">Основная причина использовать GIF заключается в том, что он поддерживает анимированные изображения. В других случаях лучше использовать JPEG или PNG.</p>
+                            <p class="article__text article__text--divider"><b>Спрайты</b></p>
+                            <p class="article__text">Спрайт — это одно большое изображение, в котором содержится много маленьких.</p>
+                            <p class="article__text">Спрайты используются, чтобы снизить количество запросов на сервер. Маленькие картинки «склеивают» в одну большую. Части спрайта отображают в элементах с небольшими размерами. Такому элементу задают картинку-спрайт в качестве фона и смещают её таким образом, чтобы была видна нужная её часть.</p>
+                            <p class="article__text">В спрайты обычно объединяют иконки и различные мелкие декоративные изображения.</p>
+                            <p class="article__text article__text--divider"><b>Множественные фоны</b></p>
+                            <p class="article__text">Самая надежная техника создания множественного фона заключается в том, что мы вкладываем элементы друг в друга и делаем их одинакового размера, а затем каждому элементу задаём свой фон. Каждый элемент служит одним слоем фона.</p>
+                            <p class="article__text">Фоны вложенных элементов перекрывают друг друга: чем глубже элемент, тем выше его фон.</p>
+                            <p class="article__text">Для удобства ширину лучше задавать внешнему элементу (так как все вложенные будут той же ширины), а высоту самому глубокому, так как он растянет по высоте всех своих родителей.</p>
                         </article>
                     </section>
                 </div>

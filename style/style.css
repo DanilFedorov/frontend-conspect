@@ -292,6 +292,11 @@ body {
   margin-top: 16px;
 }
 
+.article__text--divider {
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 6px;
+}
+
 .article__img {
   margin-top: 16px;
 }
@@ -300,7 +305,7 @@ body {
   font-family: 'Source Code Pro', monospace;
   background-color: #30363d;
   border-radius: 5px;
-  border: 1px solid #58a6ff;
+  border: 1px solid #8b949e;
   padding: 0 4px;
 }
 
