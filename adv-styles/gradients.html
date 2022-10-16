@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <title>Блок 1.4: Продвинутая стилизация</title>
+    <title>Градиенты и тени</title>
 </head>
 <body>
     <div class="body-grid">
@@ -104,7 +104,13 @@
                     /
                 </li>
                 <li class="crumbs-nav__item">
-                    1.4: Продвинутая стилизация
+                    <a href="../adv-styles/index.html" class="crumbs-nav__link">1.4: Продвинутая стилизация</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    Градиенты и тени
                 </li>
             </ul>
         </header>
@@ -112,98 +118,113 @@
             <div class="main__center-wrapper">
                 <div class="main__grid-wrapper">
                     <div class="main__topper">
-                        <h1 class="topper__title">Блок 1.4: Продвинутая стилизация</h1>
-                        <h2 class="topper__subtitle">Продвинутое изучение таких CSS свойств как: позиционирование, градиенты и тени, трансформации и декоративные эффекты.</h2>
+                        <h1 class="topper__title">Погружение в декоративные эффекты</h1>
+                        <h2 class="topper__subtitle">Разбираемся с тенями, линейными градиентами и тонкостями оформления текста.</h2>
                     </div>
                     <aside class="main__aside">
                         <h2 class="aside__title">В данном конспекте</h2>
                         <nav class="aside__page-nav">
                             <ul class="page-nav__list">
                                 <li class="page-nav__item">
-                                    <a href="#Title-1" class="page-nav__link">Источники</a>
+                                    <a href="#Title-1" class="page-nav__link">box-shadow</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
+                                    <a href="#Title-2" class="page-nav__link">Интерполяция</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-3" class="page-nav__link">Задание</a>
+                                    <a href="#Title-3" class="page-nav__link">linear-gradient</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                    <a href="#Title-4" class="page-nav__link">repeating-linear-gradient</a>
                                 </li>
                             </ul>
                         </nav>
                     </aside>
                     <section class="main__section">
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>box-shadow</h2>
+                            <p class="article__text">CSS-свойство <code class="article__code">box-shadow</code> добавляет тень к элементу. Через запятую можно задать несколько теней. Тень описывается смещениями по оси X и Y относительно элемента, радиусом размытия и распространения, а также цветом.</p>
+                            <p class="article__text">Свойство <code class="article__code">box-shadow</code> включает отбрасывание тени от границ практически любого элемента. Если для элемента с тенью задан <code class="article__code">border-radius</code>, то отбрасываемая тень также будет с закруглёнными углами. Порядок наложения нескольких теней такой же, что и у текстовых теней: первая указанная тень будет поверх остальных.</p>
+                            <p class="article__text"><a href="https://cssgenerator.org/box-shadow-css-generator.html" class="article__link" target="_blank">Генератор теней</a> — интерактивный инструмент, позволяющий сгенерировать значение для <code class="article__code">box-shadow</code>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Ключевые слова */
+box-shadow: none;
+
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+
+/* Любое количество теней через запятую */
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+/* Глобальные значения */
+box-shadow: inherit;
+box-shadow: initial;
+box-shadow: revert;
+box-shadow: revert-layer;
+box-shadow: unset;</code></pre>
+                            <p class="article__text">Для одновременного создания нескольких теней используйте список значений, разделённых запятыми.</p>
                             <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/css-box-model" class="article__link" target="_blank">Позиционирование</a>
+                                <li class="article__item"><code class="article__code">inset</code> - Если не указано (по умолчанию), то тень будет отбрасываться от элемента (придавая эффект выпуклости блоку). Наличие ключевого слова <code class="article__code">inset</code> отбрасывает тень внутри элемента (создавая эффект вдавленности блока). Внутренние тени начинаются с рамок элемента (даже если они прозрачные), над фоном элемента, но не под его содержимым.</li>
+                                <li class="article__item"><code class="article__code">offset-x</code> <code class="article__code">offset-y</code> - Есть два значения <code class="article__code">length</code>, отвечающие за смещения тени. Значение <code class="article__code">offset-x</code> задаёт положение тени по горизонтали. Отрицательные значения размещают тень слева от элемента. Значение <code class="article__code">offset-y</code> определяет положение тени по вертикали. Отрицательные значения располагают тень выше элемента. См. <code class="article__code">length</code>, чтобы узнать список допустимых единиц. Если смещение по обоим осям равно 0, то тень будет отбрасываться за элементом (в таком случае при наличии значений <code class="article__code">blur-radius</code> и/или <code class="article__code">spread-radius</code> будет эффект размытия).</li>
+                                <li class="article__item"><code class="article__code">blur-radius</code> - Это третье значение <code class="article__code">length</code>. Чем больше это значение, тем шире и светлее будет тень. Отрицательные значения не допускаются. Если не указано (по умолчанию), используется <code class="article__code">0</code> (край тени будет резким). Спецификация не определяет в точности алгоритм вычисления радиуса размытия, однако описывает его так:
+                                <p class="article__highlight">…для длинного прямого края тени должен быть создан цветовой переход, равный длине расстояния размытия, который перпендикулярен и центрирован по краю тени. Переход начинается от указанного цвета тени в конечной точке радиуса внутри тени до полностью прозрачного цвета в конечной точке пределов радиуса.</p>
                                 </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/basic-styling" class="article__link" target="_blank">Фоны</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/decoration" class="article__link" target="_blank">Градиенты и тени</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Декоративные эффекты</a> (без испытаний, материал по border-image пропускаем)
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Трансформации</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Динамические эффекты</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Мастерские</a>
-                                </li>
+                                <li class="article__item"><code class="article__code">spread-radius</code> - Это четвёртое значение <code class="article__code">length</code>. Положительные значения расширяют тень, отрицательные — сжимают её. Если не указано (по умолчанию)) используется <code class="article__code">0</code> (тень будет такого же размера, что и сам элемент).</li>
+                                <li class="article__item"><code class="article__code">color</code> - Смотрите страницу по <code class="article__code">color</code> для получения допустимых значений. Если не указано (по умолчанию), используется <code class="article__code">currentcolor</code>.</li>
                             </ul>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Дополнительные материалы</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://webformyself.com/css-ot-a-do-ya-raznica-mezhdu-translate-i-position-relative/" class="article__link" target="_blank">Почему перемещать элементы с помощью translate лучше, чем с position:absolute</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://habr.com/ru/post/175747/" class="article__link" target="_blank">Emmet</a> (увы, на html academy не работает =( )
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" class="article__link" target="_blank">Контекст наложения</a>
-                                </li>
-                            </ul>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Интерполяция</h2>
+                            <p class="article__text">Каждая тень в списке (<code class="article__code">none</code> считается за пустой список) интерполируется через значения цвета x, y, радиуса размытия и (когда это допустимо) и радиуса расширения. Для каждой тени, если обе входные тени отмечены как <code class="article__code">inset</code> или ни одна из них таковой не является, то интерполированная тень будет соответствовать входным теням. Если в любой паре входных теней одна из них является внутренней (<code class="article__code">inset</code>), а другая нет, то список теней не интерполируется. Если количество теней отличается в разных списках, то более короткий список дополняется в конце тенями, цвет которых прозрачен (<code class="article__code">transparent</code>), все значения длин равны <code class="article__code">0</code>, и где <code class="article__code">inset</code> соответствует более длинному списку.</p>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Задание</h2>
-                            <p class="article__text">Сверстать блок из <a href="https://www.figma.com/file/VcovJdfnWZ8phhsqbAUIBr/Block-5-task" class="article__link" target="_blank">макета</a>, кладем отдельным файлом в предыдущий репозиторий. Блок должен быть шириной 320 пикселей и фиксироваться в левой части экрана независимо от размера экрана. При наведении стиль кнопок плавно меняется, возьмите для этого какой-нибудь css filter или opacity.</p>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>linear-gradient</h2>
+                            <p class="article__text"><code class="article__code">linear-gradient()</code> - это CSS функция создающая изображение состоящее из прогрессируеещего перехода между двумя, или более, цветами вдоль прямой линии. Результатом данной функции становится обьект с типом <code class="article__code">gradient</code>, который является специальным видом <code class="article__code">image</code>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Градиент под наклоном 45 градусов,
+    начинается синим и заканчивается красным */
+    background-image: linear-gradient(45deg, blue, red);
+ 
+ /* Градиент берущий начало в нижнем правом углу 
+    и идущий в левый верхний угол,
+    начинается синим и заканчивается красным */
+    background-image: linear-gradient(to left top, blue, red);
+ 
+ /* Color stop: Градиент идущий снизу вверх,
+    начинается синим, становится зеленым на 40% oего длины,
+    и заканчивается зеленым */
+    background-image: linear-gradient(0deg, blue, green 40%, red);
+ 
+ /* Color hint: Градиент идущий с лева направо,
+    начинается красным, переходит в промежуточный цвет на
+    10% пути всей длины градиента,
+    используя оставшиеся 90% длины для перехода в синий */
+    background-image: linear-gradient(.25turn, red, 10%, blue);
+ 
+ /* Multi-position color stop: Градиент под наклоном 45 градусов,
+    с  красной нижне левой половиной и синей верхне правой половиной,
+    с четкой линией в месте где красный переходит в синий */
+    background-image: linear-gradient(45deg, red 0 50%, blue 50% 100%);</code></pre>
+                            <p class="article__text">Более подробная информация по <a href="" class="article__link">linear-gradient</a></p>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Темы для ревью</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    Позиционирование
-                                </li>
-                                <li class="article__item">
-                                    Фоны
-                                </li>
-                                <li class="article__item">
-                                    Тени
-                                </li>
-                                <li class="article__item">
-                                    Градиенты
-                                </li>
-                                <li class="article__item">
-                                    Транформации
-                                </li>
-                                <li class="article__item">
-                                    Анимации
-                                </li>
-                                <li class="article__item">
-                                    z-index
-                                </li>
-                            </ul>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>repeating-linear-gradient</h2>
+                            <p class="article__text">Помимо обычных градиентов существуют и повторяющиеся. Их синтаксис полностью совпадает с синтаксисом обычных, только вместо <code class="article__code">linear-gradient</code> пишется <code class="article__code">repeating-linear-gradient</code>. Повторяющийся градиент хорош для создания полосатых фонов или фонов-орнаментов средствами CSS.</p>
+                            <p class="article__text">Есть несколько тонкостей, которые нужно знать про повторяющиеся градиенты:</p>
+                            <ol class="article__list">
+                                <li class="article__item">Размер фрагмента определяется по последнему колорстопу. Чтобы повторение было видно, последний колорстоп должен быть меньше, чем размер элемента с градиентом.</li>
+                                <li class="article__item">Если первый и последний цвета градиента различаются, то будут видны резкие границы между повторяющимися фрагментами. Чтобы от них избавиться, нужно задавать одинаковый первый и последний цвета.</li>
+                                <li class="article__item">Колорстопы в повторяющихся градиентах обычно задают в пикселях, но можно использовать и проценты.</li>
+                            </ol>
+                            <p class="article__text">Кстати, вместо повторяющихся градиентов можно использовать обычные градиенты в сочетании со свойствами <code class="article__code">background-size</code> и <code class="article__code">background-repeat</code>. Но повторяющиеся градиенты удобнее и требуют меньше кода.</p>
+                            <p class="article__text">В этом задании мы будем делать из обычных градиентов повторяющиеся. Обратите внимание на то, какого размера получаются фрагменты. Например, в первых двух блоках поместится ровно четыре фрагмента.</p>
                         </article>
                     </section>
                 </div>
