@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <title>Блок 1.4: Продвинутая стилизация</title>
+    <title>Двумерные трансформации</title>
 </head>
 <body>
     <div class="body-grid">
@@ -104,7 +104,13 @@
                     /
                 </li>
                 <li class="crumbs-nav__item">
-                    1.4: Продвинутая стилизация
+                    <a href="../adv-styles/index.html" class="crumbs-nav__link">1.4: Продвинутая стилизация</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    Трансформации
                 </li>
             </ul>
         </header>
@@ -112,98 +118,65 @@
             <div class="main__center-wrapper">
                 <div class="main__grid-wrapper">
                     <div class="main__topper">
-                        <h1 class="topper__title">Блок 1.4: Продвинутая стилизация</h1>
-                        <h2 class="topper__subtitle">Продвинутое изучение таких CSS свойств как: позиционирование, градиенты и тени, трансформации и декоративные эффекты.</h2>
+                        <h1 class="topper__title">Двумерные трансформации</h1>
+                        <h2 class="topper__subtitle">Будем крутить, наклонять, перемещать, уменьшать и увеличивать объекты. Ну и, конечно, разберём крутые приёмы использования трансформаций для создания декоративных эффектов.</h2>
                     </div>
                     <aside class="main__aside">
                         <h2 class="aside__title">В данном конспекте</h2>
                         <nav class="aside__page-nav">
                             <ul class="page-nav__list">
                                 <li class="page-nav__item">
-                                    <a href="#Title-1" class="page-nav__link">Источники</a>
-                                </li>
-                                <li class="page-nav__item">
-                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
-                                </li>
-                                <li class="page-nav__item">
-                                    <a href="#Title-3" class="page-nav__link">Задание</a>
-                                </li>
-                                <li class="page-nav__item">
-                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                    <a href="#Title-1" class="page-nav__link">transform</a>
                                 </li>
                             </ul>
                         </nav>
                     </aside>
                     <section class="main__section">
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/css-box-model" class="article__link" target="_blank">Позиционирование</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/basic-styling" class="article__link" target="_blank">Фоны</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/decoration" class="article__link" target="_blank">Градиенты и тени</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Декоративные эффекты</a> (без испытаний, материал по border-image пропускаем)
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Трансформации</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Динамические эффекты</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Мастерские</a>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Дополнительные материалы</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://webformyself.com/css-ot-a-do-ya-raznica-mezhdu-translate-i-position-relative/" class="article__link" target="_blank">Почему перемещать элементы с помощью translate лучше, чем с position:absolute</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://habr.com/ru/post/175747/" class="article__link" target="_blank">Emmet</a> (увы, на html academy не работает =( )
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" class="article__link" target="_blank">Контекст наложения</a>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Задание</h2>
-                            <p class="article__text">Сверстать блок из <a href="https://www.figma.com/file/VcovJdfnWZ8phhsqbAUIBr/Block-5-task" class="article__link" target="_blank">макета</a>, кладем отдельным файлом в предыдущий репозиторий. Блок должен быть шириной 320 пикселей и фиксироваться в левой части экрана независимо от размера экрана. При наведении стиль кнопок плавно меняется, возьмите для этого какой-нибудь css filter или opacity.</p>
-                        </article>
-                        <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Темы для ревью</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    Позиционирование
-                                </li>
-                                <li class="article__item">
-                                    Фоны
-                                </li>
-                                <li class="article__item">
-                                    Тени
-                                </li>
-                                <li class="article__item">
-                                    Градиенты
-                                </li>
-                                <li class="article__item">
-                                    Транформации
-                                </li>
-                                <li class="article__item">
-                                    Анимации
-                                </li>
-                                <li class="article__item">
-                                    z-index
-                                </li>
-                            </ul>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>transform</h2>
+                            <p class="article__text">CSS-свойство <code class="article__code">transform</code> позволяет вам поворачивать, масштабировать, наклонять или сдвигать элемент. Оно модифицирует координатное пространство для CSS визуальной форматируемой модели.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Значения ключевым словом*/
+transform: none;
+
+/* Значения функций */
+transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transform: perspective(17px);
+
+/* Поворот */
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2.0, 3.0, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+
+/* Перемещение */
+transform: translate(12px, 50%);
+transform: translate3d(12px, 50%, 3em);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translate
+
+/* Изменение размера относительно изначального */
+transform: scale(2, 0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scaleZ(0.3);
+
+/* Наклон */
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+
+/* Мультифункциональные значения */
+transform: translateX(10px) rotate(10deg) translateY(5px);
+transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+
+/* Глобальные значения */
+transform: inherit;
+transform: initial;
+transform: unset;</code></pre>
                         </article>
                     </section>
                 </div>
