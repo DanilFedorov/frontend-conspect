@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <title>Блок 1.4: Продвинутая стилизация</title>
+    <title>Динамические эффекты</title>
 </head>
 <body>
     <div class="body-grid">
@@ -98,13 +98,13 @@
                     /
                 </li>
                 <li class="crumbs-nav__item">
-                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                    <a href="../adv-styles/index.html" class="crumbs-nav__link">1.4: Продвинутая стилизация</a>
                 </li>
                 <li class="crumbs-nav__item">
                     /
                 </li>
                 <li class="crumbs-nav__item">
-                    1.4: Продвинутая стилизация
+                    Динамические эффекты
                 </li>
             </ul>
         </header>
@@ -112,97 +112,120 @@
             <div class="main__center-wrapper">
                 <div class="main__grid-wrapper">
                     <div class="main__topper">
-                        <h1 class="topper__title">Блок 1.4: Продвинутая стилизация</h1>
-                        <h2 class="topper__subtitle">Продвинутое изучение таких CSS свойств как: позиционирование, градиенты и тени, трансформации и декоративные эффекты.</h2>
+                        <h1 class="topper__title">Интерфейсные анимации</h1>
+                        <h2 class="topper__subtitle">Простые интерфейсные анимации и микроанимации сейчас делаются на чистом CSS. Для этого используются плавные переходы и покадровая анимация.</h2>
                     </div>
                     <aside class="main__aside">
                         <h2 class="aside__title">В данном конспекте</h2>
                         <nav class="aside__page-nav">
                             <ul class="page-nav__list">
                                 <li class="page-nav__item">
-                                    <a href="#Title-1" class="page-nav__link">Источники</a>
+                                    <a href="#Title-1" class="page-nav__link">Переходы</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
+                                    <a href="#Title-2" class="page-nav__link">transition-timing-function</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-3" class="page-nav__link">Задание</a>
+                                    <a href="#Title-3" class="page-nav__link">cubic-bezier</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                    <a href="#Title-4" class="page-nav__link">Анимация</a>
                                 </li>
                             </ul>
                         </nav>
                     </aside>
                     <section class="main__section">
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Переходы</h2>
+                            <p class="article__text">Свойство CSS <code class="article__code">transition</code> - это сокращённое свойство для <code class="article__code">transition-property</code>, <code class="article__code">transition-duration</code>, <code class="article__code">transition-timing-function</code>, и <code class="article__code">transition-delay</code>.</p>
+                            <p class="article__text"><code class="article__code">transition</code> позволяет определять переходное состояние между двумя состояниями элемента. Различные состояния могут быть определены с помощью псевдоклассов, таких как <code class="article__code">:hover</code> или <code class="article__code">:active</code> или установлены динамически с помощью JavaScript.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Применить к 1 свойству */
+/* имя свойства | длительность */
+transition: margin-left 4s;
+
+/* имя свойства | длительность | задержка */
+transition: margin-left 4s 1s;
+
+/* имя свойства | длительность | временная функция | задержка */
+transition: margin-left 4s ease-in-out 1s;
+
+/* Применить к 2 свойствам */
+transition: margin-left 4s, color 1s;
+
+/* Применить ко всем изменённым свойствам */
+transition: all 0.5s ease-out;
+
+/* Глобальные значения */
+transition: inherit;
+transition: initial;
+transition: unset;</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>transition-timing-function</h2>
+                            <p class="article__text">Свойство transition-timing-function определяет с какой скоростью и ускорением будут меняться свойства во время перехода.</p>
                             <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/css-box-model" class="article__link" target="_blank">Позиционирование</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/basic-styling" class="article__link" target="_blank">Фоны</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/decoration" class="article__link" target="_blank">Градиенты и тени</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Декоративные эффекты</a> (без испытаний, материал по border-image пропускаем)
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/advanced-decoration" class="article__link" target="_blank">Трансформации</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Динамические эффекты</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://htmlacademy.ru/courses/dynamic" class="article__link" target="_blank">Мастерские</a>
-                                </li>
+                                <li class="article__item"><code class="article__code">linear</code> - равномерный переход без ускорений и замедлений;</li>
+                                <li class="article__item"><code class="article__code">ease</code> - ереход начинается и заканчивается медленно;</li>
+                                <li class="article__item"><code class="article__code">ease-in</code> - переход медленно начинается, а к концу ускоряется;</li>
+                                <li class="article__item"><code class="article__code">ease-out</code> - начинается быстро, а к концу замедляется;</li>
+                                <li class="article__item"><code class="article__code">ease-in-out</code> - похоже на <code class="article__code">ease</code>, то есть переход начинается и заканчивается медленно, но происходит это чуть-чуть интенсивнее;</li>
+                                <li class="article__item"><code class="article__code">steps</code> - позволяют задать «ступеньки», по которым будет идти переход.
+                                <pre class="article__highlight"><code class="highlight__code">transition-timing-function: steps(число_шагов, направление);</code></pre></li>
                             </ul>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Дополнительные материалы</h2>
-                            <ul class="article__list">
-                                <li class="article__item">
-                                    <a href="https://webformyself.com/css-ot-a-do-ya-raznica-mezhdu-translate-i-position-relative/" class="article__link" target="_blank">Почему перемещать элементы с помощью translate лучше, чем с position:absolute</a>
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://habr.com/ru/post/175747/" class="article__link" target="_blank">Emmet</a> (увы, на html academy не работает =( )
-                                </li>
-                                <li class="article__item">
-                                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" class="article__link" target="_blank">Контекст наложения</a>
-                                </li>
-                            </ul>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>cubic-bezier</h2>
+                            <p class="article__text">Названия <code class="article__code">linear</code>, <code class="article__code">ease</code>, <code class="article__code">ease-in</code> и другие — это «псевдонимы» функций кубических <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D1%8F_%D0%91%D0%B5%D0%B7%D1%8C%D0%B5" target="_blank" class="article__link">кривых Безье</a>:</p>
+                            <pre class="article__highlight"><code class="highlight__code">cubic-bezier(0, 0, 1, 1)  // это linear
+cubic-bezier(0.42, 0, 1, 1) // это ease-in</code></pre>
+                            <p class="article__text">В общем представлении <code class="article__code">cubic-bezier(x1, y1, x2, y2)</code> значения <code class="article__code">x</code> и <code class="article__code">y</code> — это координаты точек кривых на графике. При этом верным считается значение <code class="article__code">x</code> только в диапазоне от <code class="article__code">0</code> до <code class="article__code">1</code>.</p>
+                            <p class="article__text">Существует <a href="http://cubic-bezier.com/" target="_blank" class="article__link">отличный сервис</a>, помогающий разобраться в функциональном представлении кривых Безье без необходимости штудировать учебники по математике.</p>
+                            <p class="article__text">А вот по <a href="http://easings.net/ru" target="_blank" class="article__link">этой ссылке</a> можно найти целую коллекцию разных easing-функций на основе кривых Безье.</p>
+                            <p class="article__text">C помощью функции <code class="article__code">cubic-bezier</code> мы можем задавать любые формы переходов.</p>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Задание</h2>
-                            <p class="article__text">Сверстать блок из <a href="https://www.figma.com/file/VcovJdfnWZ8phhsqbAUIBr/Block-5-task" class="article__link" target="_blank">макета</a>, кладем отдельным файлом в предыдущий репозиторий. Блок должен быть шириной 320 пикселей и фиксироваться в левой части экрана независимо от размера экрана. При наведении стиль кнопок плавно меняется, возьмите для этого какой-нибудь css filter или opacity.</p>
-                        </article>
-                        <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Темы для ревью</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Анимация</h2>
+                            <p class="article__text">С помощью CSS можно создавать сложные анимации и очень гибко управлять ими. Описание CSS-анимации состоит из двух частей: набора ключевых кадров <code class="article__code">keyframes</code> и параметров самой анимации.</p>
+                            <pre class="article__highlight"><code class="highlight__code">@keyframes stretching {
+    0% {
+      width: 100px;
+    }
+    100% {
+      width: 200px;
+    }
+}</code></pre>
+                            <p class="article__text">Анимация в примере имеет название <code class="article__code">stretching</code>, и в ней описывается, как будет меняться стиль блока от начальной до конечной точки. Эту анимацию можно применить к любому элементу, для этого достаточно добавить в CSS два свойства — <code class="article__code">animation-name</code> (название анимации) и <code class="article__code">animation-duration</code> (длительность) — и задать им нужные значения. Например:</p>
+                            <pre class="article__highlight"><code class="highlight__code">.button {
+    animation-name: stretching;
+    animation-duration: 1s;
+}</code></pre>
+                            <p class="article__text">Этот код назначит анимацию <code class="article__code">stretching</code> элементам с классом <code class="article__code">button</code>. В результате работы анимации элемент плавно увеличит ширину со <code class="article__code">100px</code> до <code class="article__code">200px</code> за <code class="article__code">1</code> секунду, а затем вернётся в исходное состояние</p>
+                            <p class="article__text">Для каждой анимации нужно задать имя, описать начальный и конечный ключевые кадры, которые задаются с помощью зарезервированных слов <code class="article__code">from</code> и <code class="article__code">to</code> или значений <code class="article__code">0%</code> и <code class="article__code">100%</code>.</p>
+                            <p class="article__text">Также можно описать промежуточные ключевые кадры, которые задаются с помощью процентов.</p>
+                            <p class="article__text">Если не задан начальный ключевой кадр, то анимация будет проигрываться из исходного стилевого состояния элемента к ближайшему шагу из перечисленных в <code class="article__code">keyframes</code> и далее.</p>
+                            <p class="article__text">Если не задан конечный кадр, то после достижения последнего промежуточного шага, анимация проиграется в обратном направлении до достижения изначального состояния элемента.</p>
+                            <p class="article__text">Ключевые кадры внутри <code class="article__code">keyframes</code> могут быть написаны в произвольном порядке, но лучше их перечислять по хронологии от меньшего к большему.</p>
+                            <p class="article__text">Длительность анимации <code class="article__code">animation-duration</code> задаётся в секундах или миллисекундах, например: <code class="article__code">10s</code>, <code class="article__code">100ms</code>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">/* Ключевые кадры в keyframes можно группировать, 
+для этого нужно перечислить их через запятую */
+
+@keyframes stretching {
+    0%,
+    50% {
+      width: 100px;
+    }
+    100% {
+      width: 200px;
+    }
+  }</code></pre>
+                            <p class="article__text">В этом примере первые два кадра сгруппированы. Анимируемый элемент сначала изменит свою ширину до <code class="article__code">100px</code> и останется в этом состоянии половину времени анимации. А за вторую половину времени он растянется от <code class="article__code">100px</code> до <code class="article__code">200px</code>;</p>
                             <ul class="article__list">
-                                <li class="article__item">
-                                    Позиционирование
-                                </li>
-                                <li class="article__item">
-                                    Фоны
-                                </li>
-                                <li class="article__item">
-                                    Тени
-                                </li>
-                                <li class="article__item">
-                                    Градиенты
-                                </li>
-                                <li class="article__item">
-                                    Транформации
-                                </li>
-                                <li class="article__item">
-                                    Анимации
-                                </li>
-                                <li class="article__item">
-                                    z-index
-                                </li>
+                                <li class="article__item"><code class="article__code">animation-iteration-count</code> - определяет сколько раз будет повторяться анимация. В качестве значения оно принимает: <code class="article__code">infinite</code> положительные числа и ноль: при нуле анимация не будет выполнена;</li>
+                                <li class="article__item"><code class="article__code">animation-direction</code> - определяет направление проигрывания анимации, оно принимает значения: <code class="article__code">normal</code>, <code class="article__code">reverse</code>, <code class="article__code">alternate</code>, <code class="article__code">alternate-reverse</code>;</li>
+                                <li class="article__item"><code class="article__code">animation-delay</code> - управляет задержкой перед выполнением анимации;</li>
+                                <li class="article__item"><code class="article__code">animation-fill-mode</code> - определяет, будет ли видимым эффект от анимации, когда сама анимация уже закончилась, принимает значения: <code class="article__code">none</code>, <code class="article__code">forwards</code>, <code class="article__code">backwards</code>, <code class="article__code">both</code>;</li>
+                                <li class="article__item"><code class="article__code">animation-play-state</code> - даёт возможность поставить анимацию на паузупринимает: <code class="article__code">running</code> и <code class="article__code">paused</code></li>
+                                <li class="article__item"><code class="article__code">animation-timing-function</code> - определяет, как именно будет происходить анимация: с какой скоростью и ускорением будут меняться свойства, задействованные в ней. Принимает значения: <code class="article__code">linear</code>, <code class="article__code">ease,</code> <code class="article__code">ease-in</code>, <code class="article__code">ease-in-out</code>, <code class="article__code">ease-out</code>,<code class="article__code">steps</code>, <code class="article__code">cubic-bezier</code>.</li>
                             </ul>
                         </article>
                     </section>
