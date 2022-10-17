@@ -211,6 +211,7 @@ body {
 
 .main__section {
   grid-area: section;
+  min-height: 400px;
 }
 
 .topper__title {
