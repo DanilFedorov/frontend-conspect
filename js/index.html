@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>Блок 1.4: Продвинутая стилизация</title>
+</head>
+<body>
+    <div class="body-grid">
+        <aside class="menu">
+            <nav class="menu__site-nav site-nav">
+                <a href="" class="site-nav__return-link return-link">
+                    <svg aria-hidden="true" role="img" class="return-link__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
+                    </svg>Все разделы
+                </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="../git/index.html" class="site-nav__link">1.1: Git
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../basics/index.html" class="site-nav__link">1.2: Основы CSS/HTML
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../grids/index.html" class="site-nav__link">1.3.1: Построение сеток
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../bem/index.html" class="site-nav__link">1.3.2: БЭМ именование
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../adv-styles/index.html" class="site-nav__link">1.4: Продвинутая стилизация
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../js/index.html" class="site-nav__link site-nav__link--active">1.5: JavaScript в браузере
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow site-nav__arrow--open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                        <ul class="site-nav__drop-list">
+                            <li class="site-nav__drop-item">
+                                <a href="style-requirments.html" class="site-nav__drop-link">Требования к стилю кода</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="codingjs.html" class="site-nav__drop-link">Основы JavaScript</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="browserjs.html" class="site-nav__drop-link">JS в браузере</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../environment/index.html" class="site-nav__link">1.6: Настройки окружения
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    1.5: JavaScript в браузере
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__center-wrapper">
+                <div class="main__grid-wrapper">
+                    <div class="main__topper">
+                        <h1 class="topper__title">Блок 1.5: JavaScript в браузере</h1>
+                        <h2 class="topper__subtitle">Продвинутое изучение таких CSS свойств как: позиционирование, градиенты и тени, трансформации и декоративные эффекты.</h2>
+                    </div>
+                    <aside class="main__aside">
+                        <h2 class="aside__title">В данном конспекте</h2>
+                        <nav class="aside__page-nav">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__item">
+                                    <a href="#Title-1" class="page-nav__link">Источники</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-2" class="page-nav__link">Дополнительные материалы</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-3" class="page-nav__link">Задание</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-4" class="page-nav__link">Темы для ревью</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main__section">
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Источники</h2>
+                            <ul class="article__list">
+                                <li class="article__item">
+                                    <a href="https://learn.javascript.ru/coding-style" class="article__link" target="_blank">Требования к стилю кода</a>
+                                </li>
+                                <li class="article__item">
+                                    <a href="https://htmlacademy.ru/courses/javascript" class="article__link" target="_blank">Основы JavaScript</a>
+                                </li>
+                                <li class="article__item">
+                                    <a href="https://htmlacademy.ru/courses/javascript-in-browser" class="article__link" target="_blank">JS в браузере</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Дополнительные материалы</h2>
+                            <ul class="article__list">
+                                <li class="article__item">
+                                    <a href="https://learn.javascript.ru/intro" class="article__link" target="_blank">Введение</a>
+                                </li>
+                                <li class="article__item">
+                                    <a href="https://learn.javascript.ru/types" class="article__link" target="_blank">Типы данных</a>
+                                </li>
+                                <li class="article__item">
+                                    <a href="https://learn.javascript.ru/type-conversions" class="article__link" target="_blank">Приведение типов</a>
+                                </li>
+                                <li class="article__item">
+                                    <a href="http://learn.javascript.ru/closure" class="article__link" target="_blank">Замыкания</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Задание</h2>
+                            <p class="article__text">Сверстать блок из <a href="https://www.figma.com/file/dYxTnDZa3xXgpHbcpbVm95/Block6" class="article__link" target="_blank">макета</a>, добавить к предыдущему репозиторию. Блок должен иметь разное количество элементов при разной ширине экранов.</p>
+                            <p class="article__text">По нажатию на "Показать все" открываются все ссылки, по "Скрыть" сворачиваются обратно.</p>
+                            <p class="article__text">На мобильном инициируем <a href="https://swiperjs.com/" class="article__link" target="_blank">этот слайдер</a> (погуглите, как это сделать только для мобилки, переключение при ресайзе не обязательно). На отличие набора брендов при разных разрешениях не обращайте внимание, главное чтобы их количество и внешний вид соответствовал макету.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Темы для ревью</h2>
+                            <ul class="article__list">
+                                <li class="article__item">
+                                    Типы данных
+                                </li>
+                                <li class="article__item">
+                                    Приведение типов
+                                </li>
+                                <li class="article__item">
+                                    Области видимости
+                                </li>
+                                <li class="article__item">
+                                    Взаимодействие с DOM
+                                </li>
+                                <li class="article__item">
+                                    Обработка событий
+                                </li>
+                                <li class="article__item">
+                                    Замыкания
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
