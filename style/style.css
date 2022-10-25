@@ -300,6 +300,8 @@ body {
 
 .article__img {
   margin-top: 16px;
+  max-width: 100%;
+  height: auto;
 }
 
 .article__code {
