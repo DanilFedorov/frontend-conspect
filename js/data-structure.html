@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>Базовые структуры данных</title>
+</head>
+<body>
+    <div class="body-grid">
+        <aside class="menu">
+            <nav class="menu__site-nav site-nav">
+                <a href="" class="site-nav__return-link return-link">
+                    <svg aria-hidden="true" role="img" class="return-link__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
+                    </svg>Все разделы
+                </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="../git/index.html" class="site-nav__link">1.1: Git
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../basics/index.html" class="site-nav__link">1.2: Основы CSS/HTML
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../grids/index.html" class="site-nav__link">1.3.1: Построение сеток
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../bem/index.html" class="site-nav__link">1.3.2: БЭМ именование
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../adv-styles/index.html" class="site-nav__link">1.4: Продвинутая стилизация
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../js/index.html" class="site-nav__link site-nav__link--active">1.5: JavaScript в браузере
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow site-nav__arrow--open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                        <ul class="site-nav__drop-list">
+                            <li class="site-nav__drop-item">
+                                <a href="style-requirments.html" class="site-nav__drop-link">Требования к стилю кода</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="codingjs.html" class="site-nav__drop-link">Основы JavaScript</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="terms.html" class="site-nav__drop-link">Условия</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="cycles.html" class="site-nav__drop-link">Циклы</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="data-structure.html" class="site-nav__drop-link  site-nav__drop-link--active">Базовые структуры данных</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="closure.html" class="site-nav__drop-link">Замыкания</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="browserjs.html" class="site-nav__drop-link">JS в браузере</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="index.html" class="crumbs-nav__link">1.5: JavaScript в браузере</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    Базовые структуры данных
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__center-wrapper">
+                <div class="main__grid-wrapper">
+                    <div class="main__topper">
+                        <h1 class="topper__title">Базовые структуры данных</h1>
+                        <h2 class="topper__subtitle">Разберём базовые структуры данных и алгоритмы их обработки. Научимся работать с массивами, функциями и объектами. Напишем программы для расшифровки сообщений, несколько калькуляторов и конструктор компьютера.</h2>
+                    </div>
+                    <aside class="main__aside">
+                        <h2 class="aside__title">В данном конспекте</h2>
+                        <nav class="aside__page-nav">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__item">
+                                    <a href="#Title-1" class="page-nav__link">Массивы</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-2" class="page-nav__link">Функции</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-3" class="page-nav__link">Параметры и аргументы функции</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-4" class="page-nav__link">Возвращение из функции</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-5" class="page-nav__link">Объекты</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-6" class="page-nav__link">Чтение и запись в объект</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-7" class="page-nav__link">Методы объекта</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-8" class="page-nav__link">Скобочная нотация</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-9" class="page-nav__link">Объект как словарь</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-10" class="page-nav__link">this</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main__section">
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>Массивы</h2>
+                            <p class="article__text">Массив — тип данных, который представляет собой список элементов, у каждого из которых есть свой порядковый номер.</p>
+                            <p class="article__text">В массиве можно хранить любые данные: строки, булевы значения, числа и даже другие массивы.</p>
+                            <p class="article__text">Нумерация элементов массива начинается с нуля, поэтому порядковый номер (индекс) первого элемента равен нулю.</p>
+                            <p class="article__text">В качестве индекса можно использовать переменную.</p>
+                            <p class="article__text">Используйте команду <code class="article__code">[].length</code>, чтобы узнать длину массива (сколько в нём элементов). С её помощью можно получить последний элемент массива.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let numbers = [1, 2, 3, 4, 5];
+let index = 3;
+
+console.log(numbers[0]);                  // Выведет: 1
+console.log(numbers[index]);              // Выведет: 4
+console.log(numbers.length);              // Выведет: 5
+console.log(numbers[numbers.length - 1]); // Выведет: 5</code></pre>
+                            <p class="article__text">Массивы можно перебирать в циклах. Например, цикл ниже выводит элементы массива в консоль по очереди и прекращает свою работу, когда i станет равно длине массива.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i <= numbers.length - 1; i++) {
+  console.log(numbers[i]);
+}
+
+// Выведет: 1
+// Выведет: 2
+// Выведет: 3
+// Выведет: 4
+// Выведет: 5</code></pre>
+                            <p class="article__text">Запись в массив происходит так же, как чтение, через квадратные скобки.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let numbers = [];
+let index = 1;
+                                
+numbers[0] = 1;
+numbers[index] = 2;
+                                
+console.log(numbers); // Выведет: [1,2]</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Функции</h2>
+                            <p class="article__text">Функция — кусок кода, который можно написать один раз, а затем многократно использовать. Функция не просто содержит в себе значение, как переменная, а выполняет какое-то действие и решает какую-то задачу: считает, сравнивает, ищет.</p>
+                            <p class="article__text">Код внутри <code class="article__code">{ }</code> называется «телом функции».</p>
+                            <pre class="article__highlight"><code class="highlight__code">let functionName = function () {
+  // Тело функции
+};</code></pre>
+                            <p class="article__text">Чтобы функция начала свою работу, её надо вызвать. Для этого нужно обратиться к функции по её имени, а затем указать круглые скобки.</p>
+                            <pre class="article__highlight"><code class="highlight__code">functionName();</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Параметры и аргументы функции</h2>
+                            <p class="article__text">Параметры — значения, с помощью которых можно настраивать функции. Так мы можем узнать результат работы функции для разных случаев.</p>
+                            <p class="article__text">В момент объявления функции, в круглых скобках, мы создаём параметры. Здесь всё, как с переменными: сначала задаём параметрам имена, которые описывают, что за значения будут в них записаны. Если параметров несколько, они записываются через запятую.</p>
+                            <p class="article__text">Параметры работают так же, как переменные. Мы подставляем их вместо фиксированных значений в операции внутри функции. При выполнении кода вместо каждого параметра подставится его значение.</p>
+                            <p class="article__text">В момент вызова функции мы указываем в круглых скобках те значения, которые окажутся в параметрах.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let showTime = function (hours, minutes) {
+  console.log('Текущее время: ' + hours + ':' + minutes);
+};
+                              
+showTime(3, 15);    // Выведет: Текущее время: 3:15
+showTime(16, 20);   // Выведет: Текущее время: 16:20</code></pre>
+                            <p class="article__text">Правильно говорить «функция принимает параметры», но при этом мы «передаём функции аргументы».</p>
+                            <p class="article__text">Если у функции указан параметр, но аргумент не передан, то значение параметра в теле функции будет <code class="article__code">undefined</code> — то есть «не определено».</p>
+                            <p class="article__text">Передавать аргументы надо в том же порядке, в котором объявлены параметры функции.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Возвращение из функции</h2>
+                            <p class="article__text">Функции умеют возвращать результат своей работы. Это значит, что функция может выполнить код и отдать результат операций для дальнейшей работы с этим результатом. Он подставится в то место кода, где мы вызвали функцию.</p>
+                            <p class="article__text">Чтобы функция вернула значение, мы используем оператор <code class="article__code">return</code>. После оператора указываем, что именно надо вернуть. Когда программа доходит до строки с <code class="article__code">return</code>, функция отдаёт результат своей работы и выполнение кода из тела функции останавливается, иными словами происходит выход из функции.</p>
+                            <ul class="article__list">
+                                <li class="article__item">Код, написанный на новой строке после <code class="article__code">return</code>, не выполняется.</li>
+                                <li class="article__item">Функция не может вернуть сразу много значений, она возвращает только один результат.</li>
+                                <li class="article__item">Если внутри функции нет <code class="article__code">return</code> или после <code class="article__code">return</code> не указано, какое значение нужно вернуть, функция вернёт <code class="article__code">undefined</code>, иными словами, ничего.</li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>Объекты</h2>
+                            <p class="article__text">Объект — тип данных, который хранит в себе информацию в виде пар «ключ-значение». Каждый элемент сопоставлен со своим ключом и порядок элементов совсем неважен.</p>
+                            <p class="article__text">Ключи в объекте следует делать уникальными. Если в одном объекте несколько одинаковых ключей, то используется значение последнего.</p>
+                            <p class="article__text">Несколько правил синтаксиса:</p>
+                            <ul class="article__list">
+                                <li class="article__item">Ключ обособляется от значения двоеточием.</li>
+                                <li class="article__item">Пары «ключ-значение» отделяются друг от друга запятыми.</li>
+                                <li class="article__item">Значениями могут быть данные любого типа (число, строка, массив и так далее).</li>
+                            </ul>
+                            <pre class="article__highlight"><code class="highlight__code">let cat = {
+  name: 'Кекс',
+  age: 5
+};</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>Чтение и запись в объект</h2>
+                            <p class="article__text">Чтобы получить значение свойства, к нему надо обратиться через точку <code class="article__code">объект.ключ</code>. Такая запись называется точечной нотацией и возвращает значение свойства объекта, если такое свойство есть. В противном случае вы получите <code class="article__code">undefined</code>, то есть ничего.</p>
+                            <pre class="article__highlight"><code class="highlight__code">console.log(cat.name); // Выведет в консоль: Кекс
+console.log(cat.age); // Выведет в консоль: 5
+console.log(cat.color); // Выведет: undefined. Такого ключа в объекте нет</code></pre>
+                            <p class="article__text">Свойства объектов можно не только читать, но и переопределять, как и обычные переменные. А ещё в объект можно добавлять новые свойства уже после того, как он был создан.</p>
+                            <pre class="article__highlight"><code class="highlight__code">cat.age++; // Увеличили возраст кота на 1
+console.log(cat.age) // Выведет: 6
+cat.name = 'Рокки'; // Заменили снаружи значение свойства name
+console.log(cat.name); // Выведет: Рокки
+cat.color = 'рыжий'; // Добавили в объект новое свойство
+console.log(cat.color); // Выведет: рыжий</code></pre>
+                            <p class="article__text">Объект всегда один, в памяти не создаётся новое место под копию объекта. Каждая переменная содержит не новую отдельную сущность, а ссылку на один-единственный объект. Поэтому когда мы меняем что-то в объекте через одну из переменных, в которой содержится ссылка на него, изменения видны во всех других переменных, будь их хоть двадцать или сорок. Это важная особенность объектов, которую надо запомнить. Она так и называется — передача объектов по ссылке.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let firstCat = {
+  name: 'Кекс',
+  age: 5
+};
+                              
+let secondCat = firstCat;
+console.log(secondCat); // Выведет: {name: "Кекс", age:5}
+                              
+firstCat.name = 'Снежок';
+console.log(secondCat); // Выведет: {name: "Снежок", age:5}</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-7"></a>Методы объекта</h2>
+                            <p class="article__text">В объектах могут храниться любые типы данных, в том числе и функции. Такие свойства-функции называются методами объектов. Вызов метода записывается так: объект.метод ().</p>
+                            <pre class="article__highlight"><code class="highlight__code">let cat = {
+  name: 'Кекс',
+  color: 'рыжий',
+  age: 5,
+                              
+  getGreeting: function() {
+    return 'Мяу, привет!';
+  }
+};
+                              
+console.log(cat.getGreeting()); // Выведет: Мяу, привет!</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-8"></a>Скобочная нотация</h2>
+                            <p class="article__text">Прочитать свойство из объекта можно с помощью квадратных скобок: <code class="article__code">catsFavoriteFood[name]</code>. Способ со скобками называется скобочной нотацией, способ с точкой — точечной нотацией.</p>
+                            <p class="article__text">Скобочная нотация намного гибче точечной. Например, вы можете прочитать из объекта свойство, название которого записано в переменную:</p>
+                            <pre class="article__highlight"><code class="highlight__code">let name = 'Кекс';
+let catsFavoriteFood = { 'Кекс': 'рыба' };
+                                
+console.log(catsFavoriteFood.name); // Выведет: undefined
+                                
+console.log(catsFavoriteFood[name]); // Выведет: рыба</code></pre>
+                            <p class="article__text">Первое сообщение содержит <code class="article__code">undefined</code>, потому что у объекта нет свойства <code class="article__code">name</code>. Второе сообщение содержит искомое значение, потому что программа понимает, что в квадратных скобках переменная. Значение переменной подставится в скобки, а затем будет найдено нужное свойство объекта.</p>
+                            <p class="article__text">В качестве ключей в объекте можно использовать любые строки, даже строки с пробелами. С точечной нотацией такие свойства прочитать не получится, а со скобочной — без проблем.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let cat = { 'favorite food': 'Сметана' };
+
+// Вызовет ошибку
+console.log(cat.favorite food);
+                                
+// Отработает нормально
+console.log(cat['favorite food']);</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-9"></a>Объект как словарь</h2>
+                            <p class="article__text">Словари, или мапы, очень удобны в использовании. В нашем примере они хранят соотношение имени кота и лакомства, которое по вкусу именно ему.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let catsFavoriteFood = {
+  Кекс: 'рыба',
+  Рудольф: 'котлета',
+  Снежок: 'сметана'
+};
+                              
+let printFavoriteFood = function (name) {
+  // Используем скобочную нотацию
+  return 'Моя любимая еда — ' + catsFavoriteFood[name];
+};
+                              
+console.log(printFavoriteFood('Снежок')); 
+// Выведет: Моя любимая еда — сметана</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-10"></a>this</h2>
+                            <p class="article__text">Изнутри методов можно обращаться к свойствам и другим методам объекта с помощью ключевого слова <code class="article__code">this</code>. Оно указывает на текущий объект и называется контекстом вызова.</p>
+                            <p class="article__text">Важная деталь: пока функция не вызвана, <code class="article__code">this</code> не содержит никакого значения, контекст появляется только в момент вызова функции.</p>
+                            <pre class="article__highlight"><code class="highlight__code">let cat = {
+  name: 'Кекс',
+  color: 'рыжий',
+  age: 5,
+                              
+  getGreeting: function() {
+    return 'Мяу, привет! Меня зовут ' + this.name;
+  }
+};
+                              
+console.log(cat.getGreeting()); // Выведет: Мяу, привет! Меня зовут Кекс</code></pre>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
