@@ -294,6 +294,8 @@ body {
 }
 
 .article__text--divider {
+  font-size: 1.25em;
+  font-weight: bold;
   border-bottom: 1px solid #30363d;
   padding-bottom: 6px;
 }
@@ -323,8 +325,6 @@ body {
 .highlight__code {
   font-family: 'Source Code Pro', monospace;
 }
-
-
 
 .footer {
   grid-area: footer;
