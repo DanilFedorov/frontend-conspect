@@ -72,16 +72,18 @@
                                 <a href="terms.html" class="site-nav__drop-link">Условия</a>
                             </li>
                             <li class="site-nav__drop-item">
+                                <a href="cycles.html" class="site-nav__drop-link">Циклы</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="data-structure.html" class="site-nav__drop-link">Базовые структуры данных</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="closure.html" class="site-nav__drop-link">Замыкания</a>
+                            </li>
+                            <li class="site-nav__drop-item">
                                 <a href="browserjs.html" class="site-nav__drop-link">JS в браузере</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="../environment/index.html" class="site-nav__link">Основы JavaScript
-                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
-                            </svg>
-                        </a>
                     </li>
                 </ul>
             </nav>
@@ -129,19 +131,19 @@
                                     <a href="#Title-2" class="page-nav__link">Комментарии</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-3" class="page-nav__link">Типы данных</a>
+                                    <a href="#Title-3" class="page-nav__link">Переменные</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-4" class="page-nav__link">Переменные</a>
+                                    <a href="#Title-4" class="page-nav__link">Операции и операторы</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-5" class="page-nav__link">Операции и операторы</a>
+                                    <a href="#Title-5" class="page-nav__link">Арифметические операции</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-6" class="page-nav__link">Арифметические операции</a>
+                                    <a href="#Title-6" class="page-nav__link">Конкатенация</a>
                                 </li>
                                 <li class="page-nav__item">
-                                    <a href="#Title-7" class="page-nav__link">Конкатенация</a>
+                                    <a href="#Title-7" class="page-nav__link">Типы данных</a>
                                 </li>
                                 <li class="page-nav__item">
                                     <a href="#Title-8" class="page-nav__link">Приведение типов</a>
@@ -168,25 +170,7 @@
 */</code></pre>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Типы данных</h2>
-                            <p class="article__text">С разными типами данных можно производить разные действия, поэтому программисту важно знать, с чем он работает. В нашей консоли тип данных выводится в скобках, например <code class="article__code">(String)</code> или <code class="article__code">(Number)</code>.</p>
-                            <p class="article__text">Существуют простые и сложные типы данных. Простые:</p>
-                            <ul class="article__list">
-                                <li class="article__item"><code class="article__code">number</code> — числа: целые и с точкой;</li>
-                                <li class="article__item"><code class="article__code">string</code> — строки;</li>
-                                <li class="article__item"><code class="article__code">boolean</code> — логические, или булевы, значения: <code class="article__code">true</code> — «истина» и <code class="article__code">false</code> — «ложь»;</li>
-                                <li class="article__item"><code class="article__code">undefined</code> — «не определено», англ.</li>
-                            </ul>
-                            <p class="article__text">Строки нужно оборачивать в кавычки: одинарные или двойные.</p>
-                            <p class="article__text">Сложные, или составные, типы содержат не одно, а несколько значений. Массив, <code class="article__code">array</code>, хранит последовательность значений, и порядок этих значений важен. Объект, <code class="article__code">object</code>, состоит из множества пар «ключ-значение», порядок этих пар не важен.</p>
-                            <pre class="article__highlight"><code class="highlight__code">// Массив
-[1, 2, 3, 4, 5]
-
-// Объект
-{month: 'june', day: 15}</code></pre>
-                        </article>
-                        <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Переменные</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Переменные</h2>
                             <p class="article__text">Имя переменной можно записать по-разному. Два самых популярных способа: <code class="article__code">camelCase</code> (верблюжья нотация) и <code class="article__code">snake_case</code> (змеиная нотация). В первом случае все слова пишутся слитно и каждое слово, за исключением первого, начинается с большой буквы (<code class="article__code">myNumber</code>, <code class="article__code">userName</code>). Во втором случае все слова разделяются нижним подчёркиванием (<code class="article__code">my_number</code>, <code class="article__code">my_name</code>).</p>
                             <p class="article__text">Имена переменных в JavaScript чувствительны к регистру: <code class="article__code">myname</code> и <code class="article__code">myName</code> — две разные переменные. Имя переменной может содержать буквы, цифры и знак подчёркивания, но оно не должно начинаться с цифры. Кроме того, в качестве имени переменной нельзя использовать ключевые слова, такие как <code class="article__code">let</code> или <code class="article__code">if</code>. Вот полный список этих ключевых слов.</p>
                             <p class="article__text">После создания переменной её можно использовать в других командах, например, выводить в консоль:</p>
@@ -204,14 +188,14 @@ console.log(timeInHours);     // Выведет: три часа</code></pre>
                             <p class="article__text">Команда <code class="article__code">let</code> для создания каждой переменной используется всего один раз. Дальше мы обращаемся к переменной по её имени, без <code class="article__code">let</code>. Если повторно задать значение переменной, то значение этой переменной изменится. Предыдущее значение при этом исчезнет. Это называется переопределением переменной.</p>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>Операции и операторы</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Операции и операторы</h2>
                             <p class="article__text">Команды состоят из операций. <code class="article__code">5 + 10;</code> — это операция. Она состоит из оператора, <code class="article__code">+</code>, и двух операндов, <code class="article__code">5</code> и <code class="article__code">10</code>.</p>
                             <p class="article__text">Оператор указывает, что произойдёт с операндами. Операции бывают унарными, бинарными и тернарными, в зависимости от количества операндов. Бинарные операции самые распространённые.</p>
                             <p class="article__text">Над разными типами операндов можно производить разные операции, поэтому важно понимать, данные какого типа хранятся в переменных.</p>
                             <p class="article__text">Порядок выполнения операций зависит от их приоритета. Если у операций одинаковый приоритет, они выполняются слева направо. Приоритет различных операторов можно посмотреть <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank" class="article__link">здесь</a>.</p>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>Арифметические операции</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>Арифметические операции</h2>
                             <p class="article__text"></p>
                             <ul class="article__list"">
                                 <li class="article__item">Сложение	+</li>
@@ -221,7 +205,7 @@ console.log(timeInHours);     // Выведет: три часа</code></pre>
                             </ul>
                         </article>
                         <article class="article">
-                            <h2 class="article__title"><a class="article__anchor" name="Title-7"></a>Конкатенация</h2>
+                            <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>Конкатенация</h2>
                             <p class="article__text">Самая частая строковая операция — это «склеивание» строк, или конкатенация:</p>
                             <pre class="article__highlight"><code class="highlight__code">let name = 'Кекс';
 
@@ -229,6 +213,38 @@ console.log(timeInHours);     // Выведет: три часа</code></pre>
 'Инструктор ' + 'Кекс'; // Результат: 'Инструктор Кекс'
 'Инструктор ' + name;   // Результат: 'Инструктор Кекс'</code></pre>
                             <p class="article__text">Конкатенация позволяет делать сообщения программ более информативными и «человечными».</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-7"></a>Типы данных</h2>
+                            <p class="article__text">С разными типами данных можно производить разные действия, поэтому программисту важно знать, с чем он работает. В нашей консоли тип данных выводится в скобках, например <code class="article__code">(String)</code> или <code class="article__code">(Number)</code>.</p>
+                            <p class="article__text">В JavaScript есть 8 основных типов данных.</p>
+                            <ul class="article__list">
+                                <li class="article__item">
+                                    Семь из них называют «примитивными» типами данных:
+                                    <ul class="article__list">
+                                        <li class="article__item"><code class="article__code">number</code> для любых чисел: целочисленных или чисел с плавающей точкой; целочисленные значения ограничены диапазоном <code class="article__code">±(253<sup>-1</sup>)</code>.</li>
+                                        <li class="article__item"><code class="article__code">bigint</code> для целых чисел произвольной длины.</li>
+                                        <li class="article__item"><code class="article__code">string</code> для строк. Строка может содержать ноль или больше символов, нет отдельного символьного типа.</li>
+                                        <li class="article__item"><code class="article__code">boolean</code> для <code class="article__code">true/false</code>.</li>
+                                        <li class="article__item"><code class="article__code">null</code> для неизвестных значений – отдельный тип, имеющий одно значение <code class="article__code">null</code>.</li>
+                                        <li class="article__item"><code class="article__code">undefined</code> для неприсвоенных значений – отдельный тип, имеющий одно значение <code class="article__code">undefined</code>.</li>
+                                        <li class="article__item"><code class="article__code">symbol</code> для уникальных идентификаторов.</li>
+                                    </ul>
+                                </li>
+                                <li class="article__item">
+                                    И один не является «примитивным» и стоит особняком:
+                                    <ul class="article__list">
+                                        <li class="article__item"><code class="article__code">object</code> для более сложных структур данных.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="article__text">Строки нужно оборачивать в кавычки: одинарные или двойные.</p>
+                            <p class="article__text">Сложные, или составные, типы содержат не одно, а несколько значений. Массив, <code class="article__code">array</code>, хранит последовательность значений, и порядок этих значений важен. Объект, <code class="article__code">object</code>, состоит из множества пар «ключ-значение», порядок этих пар не важен.</p>
+                            <pre class="article__highlight"><code class="highlight__code">// Массив
+[1, 2, 3, 4, 5]
+
+// Объект
+{month: 'june', day: 15}</code></pre>
                         </article>
                         <article class="article">
                             <h2 class="article__title"><a class="article__anchor" name="Title-8"></a>Приведение типов</h2>
@@ -239,6 +255,28 @@ console.log(timeInHours);     // Выведет: три часа</code></pre>
                             <p class="article__text">Плюс может быть знаком сложения или конкатенации, но так как один из операндов — строка, то сложение не подходит. Поэтому число <code class="article__code">50</code> приводится к строке <code class="article__code">'50'</code> и склеивается со строкой <code class="article__code">'Время, мин: '</code>.</p>
                             <p class="article__text">Звёздочка — это знак умножения, со строками она не используется. Поэтому JavaScript пытается превратить строку <code class="article__code">'2'</code> в число, и ему это удаётся. Затем числа <code class="article__code">2</code> и <code class="article__code">50</code> перемножаются, и получается <code class="article__code">100</code>.</p>
                             <p class="article__text">Из-за того, что JavaScript умеет изменять тип операндов на лету, он называется языком со слабой типизацией.</p>
+                            <p class="article__text article__text--divider"></p>
+                            <p class="article__text">Существует 3 наиболее широко используемых преобразования: строковое, численное и логическое.</p>
+                            <p class="article__text">Строковое – Происходит, когда нам нужно что-то вывести. Может быть вызвано с помощью <code class="article__code">String(value)</code>. Для примитивных значений работает очевидным образом.</p>
+                            <p class="article__text">Численное – Происходит в математических операциях. Может быть вызвано с помощью <code class="article__code">Number(value)</code>.</p>
+                            <p class="article__text">Преобразование подчиняется правилам:</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">undefined</code> => <code class="article__code">NaN</code></li>
+                                <li class="article__item"><code class="article__code">null</code> => <code class="article__code">0</code></li>
+                                <li class="article__item"><code class="article__code">true / false</code> => <code class="article__code">1 / 0</code></li>
+                                <li class="article__item"><code class="article__code">string</code> => Пробельные символы по краям обрезаются. Далее, если остаётся пустая строка, то получаем <code class="article__code">0</code>, иначе из непустой строки «считывается» число. При ошибке результат <code class="article__code">NaN</code>.</li>
+                            </ul>
+                            <p class="article__text">Логическое – Происходит в логических операциях. Может быть вызвано с помощью <code class="article__code">Boolean(value)</code>.</p>
+                            <p class="article__text">Подчиняется правилам:</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">0</code>, <code class="article__code">null</code>, <code class="article__code">undefine</code>, <code class="article__code">NaN</code>, <code class="article__code">""</code> => <code class="article__code">	false</code></li>
+                                <li class="article__item">любое другое значение => <code class="article__code">true</code></li>
+                            </ul>
+                            <p class="article__text">Большую часть из этих правил легко понять и запомнить. Особые случаи, в которых часто допускаются ошибки:</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">undefined</code> при численном преобразовании становится <code class="article__code">NaN</code>, не <code class="article__code">0</code>.</li>
+                                <li class="article__item"><code class="article__code">"0"</code> и строки из одних пробелов типа <code class="article__code">" "</code> при логическом преобразовании всегда <code class="article__code">true</code>.</li>
+                            </ul>
                         </article>
                     </section>
                 </div>

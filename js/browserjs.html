@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>JavaScript в браузере</title>
+</head>
+<body>
+    <div class="body-grid">
+        <aside class="menu">
+            <nav class="menu__site-nav site-nav">
+                <a href="" class="site-nav__return-link return-link">
+                    <svg aria-hidden="true" role="img" class="return-link__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
+                    </svg>Все разделы
+                </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="../git/index.html" class="site-nav__link">1.1: Git
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../basics/index.html" class="site-nav__link">1.2: Основы CSS/HTML
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../grids/index.html" class="site-nav__link">1.3.1: Построение сеток
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../bem/index.html" class="site-nav__link">1.3.2: БЭМ именование
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../adv-styles/index.html" class="site-nav__link">1.4: Продвинутая стилизация
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="../js/index.html" class="site-nav__link site-nav__link--active">1.5: JavaScript в браузере
+                            <svg aria-hidden="true" role="img" class="site-nav__arrow site-nav__arrow--open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+                            </svg>
+                        </a>
+                        <ul class="site-nav__drop-list">
+                            <li class="site-nav__drop-item">
+                                <a href="style-requirments.html" class="site-nav__drop-link">Требования к стилю кода</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="codingjs.html" class="site-nav__drop-link">Основы JavaScript</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="terms.html" class="site-nav__drop-link">Условия</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="cycles.html" class="site-nav__drop-link">Циклы</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="data-structure.html" class="site-nav__drop-link">Базовые структуры данных</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="closure.html" class="site-nav__drop-link">Замыкания</a>
+                            </li>
+                            <li class="site-nav__drop-item">
+                                <a href="browserjs.html" class="site-nav__drop-link  site-nav__drop-link--active">JS в браузере</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <ul class="crumbs-nav">
+                <li class="crumbs-nav__item">
+                    <a href="" class="crumbs-nav__link">Разделы</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="../index.html" class="crumbs-nav__link">Раздел 1: Web Core</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    <a href="index.html" class="crumbs-nav__link">1.5: JavaScript в браузере</a>
+                </li>
+                <li class="crumbs-nav__item">
+                    /
+                </li>
+                <li class="crumbs-nav__item">
+                    JavaScript в браузере
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main__center-wrapper">
+                <div class="main__grid-wrapper">
+                    <div class="main__topper">
+                        <h1 class="topper__title">JavaScript в браузере</h1>
+                        <h2 class="topper__subtitle">Углубимся в работу JavaScript с вёрсткой. Научимся менять разметку и создавать её с нуля с помощью скриптов.</h2>
+                    </div>
+                    <aside class="main__aside">
+                        <h2 class="aside__title">В данном конспекте</h2>
+                        <nav class="aside__page-nav">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__item">
+                                    <a href="#Title-1" class="page-nav__link">JavaScript в браузере</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-2" class="page-nav__link">Знакомство с событиями</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-3" class="page-nav__link">Объект event</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-4" class="page-nav__link">Действия по умолчанию</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-5" class="page-nav__link">Клавиатурные события</a>
+                                </li>
+                                <li class="page-nav__item">
+                                    <a href="#Title-6" class="page-nav__link">Шаблоны и тег template</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main__section">
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-1"></a>JavaScript в браузере</h2>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">DOM-элемент.querySelector('тег/.класс/селектор')</code> - поиск элемента</li>
+                                <li class="article__item"><code class="article__code">DOM-элемент.querySelectorAll</code> - возвращает все элементы, которые подходят под указанное правило. Эта запись остаётся статичной и изменения в DOM на неё никак не влияют. Можно сказать, что <code class="article__code">querySelectorAll</code> работает, как любая переменная, в которую мы записали какое-нибудь значение. Пока мы не переопределим переменную, в ней так и будет находиться то значение, которое мы в неё записали, независимо от того, что происходит в коде. Поэтому такая коллекция называется статичной.</li>
+                                <li class="article__item"><code class="article__code">parentElement.children</code> - вызывается на родительском элементе и собирает все дочерние элементы в динамическую коллекцию. Такие коллекции реагируют на изменения в DOM. Если один из элементов коллекции будет удалён из DOM, то он пропадёт и из коллекции.</li>
+                                <li class="article__item"><code class="article__code">DOM-элемент.classList.add()</code> - добавление класса элементу страницы</li>
+                                <li class="article__item"><code class="article__code">document.createElement('тег')</code> - cоздание нового элемента</li>
+                                <li class="article__item"><code class="article__code">DOM-элемент.appendChild()</code> - добавление элемента в конец родительского элемента</li>
+                                <li class="article__item"><code class="article__code">element.remove()</code> - метод  удалит <code class="article__code">element</code> из DOM.</li>
+                                <li class="article__item"><code class="article__code">inputElement.value</code> - обращение к свойству поля ввода <code class="article__code">value</code>. Оно хранит информацию, введённую в поле. Результат можно сохранить в переменную и использовать дальше в коде.</li>
+                            </ul>
+                            <p class="article__text">С помощью клонирования мы можем копировать элементы сколько угодно раз и вставлять их в любые места на странице. Для этого существует метод <code class="article__code">cloneNode</code>. Синтаксис такой:</p>
+                            <pre class="article__highlight"><code class="highlight__code">element.cloneNode(true);     
+// Вернёт склонированный элемент со всеми вложенностями
+                                
+element.cloneNode(false);   
+// Вернёт склонированный элемент без вложенностей
+                                
+element.cloneNode();        
+// 0_o</code></pre>         
+                            <p class="article__text">При передаче <code class="article__code">true</code> в качестве аргумента клонируется сам элемент вместе со всеми вложенностями. Причём клонируются атрибуты, классы и текстовое содержимое всех вложенностей. Такое клонирование называется глубоким.</p>
+                            <p class="article__text">Если передать методу в качестве аргумента значение <code class="article__code">false</code>, то будет скопирован сам элемент со своими классами и атрибутами, но без дочерних элементов.</p>
+                            <p class="article__text">Лучше всегда явно передавать аргумент в <code class="article__code">cloneNode</code>, чтобы избежать ошибок в работе программ.</p>
+                            <p class="article__text">Работа с текстовым содержимым элемента:</p>
+                            <pre class="article__highlight"><code class="highlight__code">var p = document.querySelector('p');
+console.log(p.textContent);
+// Выведет: Я — текстовый элемент.
+                                
+p.textContent = 'Теперь у меня новое содержимое.';
+console.log(p.textContent);
+// Выведет: Теперь у меня новое содержимое.
+                                
+// В HTML содержание тега изменится</code></pre>
+                            <p class="article__text">Работа с изображениями:</p>
+                            <pre class="article__highlight"><code class="highlight__code">// Создание изображения
+var picture = document.createElement('img');
+                                
+// Добавляем адрес картинки
+picture.src = 'images/picture.jpg';
+                                
+// Добавляет альтернативный текст
+picture.alt = 'Непотопляемая селфи-палка';
+                                
+// Добавляет изображение в конец родительского элемента
+element.appendChild(picture);</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-2"></a>Знакомство с событиями</h2>
+                            <p class="article__text">События — действия пользователя на странице (клик по кнопке, нажатие клавиши).</p>
+                            <p class="article__text">Добавление обработчиков событий</p>
+                            <pre class="article__highlight"><code class="highlight__code">button.addEventListener('click', function () {
+  // Инструкции
+});</code></pre>
+                            <p class="article__text">В примере:</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">button</code> — элемент, на котором мы хотим «слушать» событие.</li>
+                                <li class="article__item"><code class="article__code">addEventListener()</code> — функция добавления обработчика события на элемент.</li>
+                                <li class="article__item"><code class="article__code">'click'</code> — общепринятое название события, первый параметр функции addEventListener. Названия всех событий можно посмотреть <a href="https://developer.mozilla.org/en-US/docs/Web/Events" class="article__link" target="_blank">здесь</a>.</li>
+                                <li class="article__item"><code class="article__code">addEventListener</code> — функция-обработчик, в ней записаны инструкции, которые выполнятся, только когда произойдёт событие.</li>
+                            </ul>
+                            <p class="article__text">Обратите внимание, мы передаём функцию, а не её вызов. Если мы вызовем функцию, код из этой функции выполнится сразу и больше не сработает. А нам нужно, чтобы код выполнился асинхронно — в момент, когда произойдёт событие.</p>
+                            <pre class="article__highlight"><code class="highlight__code">// Так добавлять обработчик неправильно
+
+button.addEventListener('click', function () {
+  console.log('Клик по кнопке');
+}());
+// Сообщение сразу же выведется в консоль
+                                
+                                
+// А такой код верный
+                                
+button.addEventListener('click', function () {
+  console.log('Клик по кнопке');
+});
+// Сообщение выведется, когда произойдёт событие клика</code></pre>
+                            <p class="article__text">В примере выше мы передаём в обработчик функцию, у которой нет своего имени, она не записана в переменную. Мы создали её там же, где передаём. Такие функции, которые создаются в момент передачи и не имеют имени, называются анонимными функциями.</p>
+                            <ul class="article__list">
+                                <li class="article__item"><code class="article__code">'click'</code> - реагирует на клик/нажатие</li>
+                                <li class="article__item"><code class="article__code">'change'</code> - срабатывает, когда состояние поля ввода меняется. Например, невыбранный чекбокс становится выбранным или наоборот.</li>
+                                <li class="article__item"><code class="article__code">'submit'</code> - реагирует на отправку формы.</li>
+                            </ul>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-3"></a>Объект event</h2>
+                            <p class="article__text">Объект <code class="article__code">event</code> — параметр функции-обработчика. Он всегда передаётся браузером в эту функцию в момент наступления события. Этот объект содержит много полезных свойств и методов.</p>
+                            <p class="article__text">Чтобы использовать event, достаточно указать этот объект параметром функции-обработчика и написать инструкции. Остальное сделает JavaScript. Среди некоторых разработчиков принято называть параметр сокращённо — <code class="article__code">evt</code>, во избежание ошибок.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-4"></a>Действия по умолчанию</h2>
+                            <p class="article__text">Некоторые элементы страницы имеют действия по умолчанию или дефолтные действия. Например, клик по кнопке отправления формы вызывает отправку данных этой формы на сервер, а при клике по ссылке браузер переходит по этой ссылке.</p>
+                            <p class="article__text">Объект <code class="article__code">event</code>содержит метод, который отменяет действие элемента по умолчанию: <code class="article__code">preventDefault()</code>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">link.addEventListener('click', function(evt) {
+  // Отменяем действие по умолчанию
+  evt.preventDefault();
+                              
+  // Добавляем инструкции для события клика
+  console.log('Произошёл клик');
+});</code></pre>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-5"></a>Клавиатурные события</h2>
+                            <p class="article__text">У события «нажатие на клавишу» есть специальное название — <code class="article__code">'keydown'</code>. Такое событие срабатывает при нажатии на любую клавишу. Обратите внимание, слушать это событие можно только на элементах, которые имеют состояние фокуса: поля ввода, кнопки, элементы с атрибутом <code class="article__code">tabindex</code>, документ. При нажатии фокус должен находиться на соответствующем элементе.</p>
+                            <p class="article__text">Если мы хотим поймать нажатие какой-то конкретной клавиши, можно обратиться к свойству <code class="article__code">keyCode</code> объекта <code class="article__code">event</code>. Это свойство содержит код нажатой клавиши. Например, у <code class="article__code">Enter</code> код <code class="article__code">13</code>, а у <code class="article__code">ESC</code> — <code class="article__code">27</code>. Эти номера универсальны и одинаковы в любой раскладке. Найти код любой клавиши можно <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode" class="article__link" target="_blank">здесь</a>.</p>
+                            <pre class="article__highlight"><code class="highlight__code">document.addEventListener('keydown', function(evt) {
+  // Проверяем, что код клавиши равен 27
+  if (evt.keyCode === 27) {
+    // Код отсюда выполнится только при нажатии ESC
+  }
+});</code></pre>
+                            <p class="article__text">Кроме <code class="article__code">keyCode</code> есть и другие свойства для определения нажатой клавиши. Например, <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key" class="article__link" target="_blank">key</a> и <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code" class="article__link" target="_blank">code</a>. Они возвращают названия клавиш, а не их номера. Эти свойства пока поддерживаются не во всех браузерах, но когда поддержка станет лучше, стоит начать использовать их вместо <code class="article__code">keyCode</code> в соответствии с современным стандартом JavaScript.</p>
+                        </article>
+                        <article class="article">
+                            <h2 class="article__title"><a class="article__anchor" name="Title-6"></a>Шаблоны и тег template</h2>
+                            <p class="article__text">Тег <code class="article__code">template</code> хранит в себе шаблон для будущих элементов. Он там же, где и вся разметка сайта, только его содержимое не отображается на странице.</p>
+                            <p class="article__text">Чтобы получить <code class="article__code">template</code> в JavaScript, можно найти его по идентификатору. Это уникальное название записывают в атрибут <code class="article__code">id</code>. Такой атрибут можно указывать для разных элементов, главное соблюдать правило — значение атрибута не должно повторяться на одной странице.</p>
+                            <p class="article__text">Шаблон в разметке:</p>
+                            <pre class="article__highlight"><code class="highlight__code">&lt;body>
+  …
+  &lt;template id="text-template">
+    &lt;p class="text"></p>
+  &lt;/template>
+  &lt;/body></code></pre>
+                            <p class="article__text">Внутри <code class="article__code">template</code> находится <code class="article__code">document-fragment</code> или просто фрагмент. Он является хранилищем содержимого тега <code class="article__code">template</code>. Именно благодаря ему разметка из <code class="article__code">template</code> не отображается на странице.</p>
+                            <p class="article__text">Чтобы получить необходимые элементы в шаблоне, надо обратиться к <code class="article__code">document-fragment</code>, он находится в свойстве <code class="article__code">content</code> и дальше искать нужные элементы привычными методами поиска.</p>
+                            <pre class="article__highlight"><code class="highlight__code">var textTemplate = document.querySelector('#text-template').content;
+var text = textTemplate.querySelector('.text');</code></pre>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
